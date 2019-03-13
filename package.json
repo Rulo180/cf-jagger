@@ -1,0 +1,34 @@
+{
+  "name": "cf-jagger",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-js": "webpack",
+    "watch-js": "webpack --watch",
+    "watch": "concurrently \"npm run watch-css\" \"npm run watch-js\"",
+    "build": "concurrently \"npm run build-js\" \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rulo180/cf-jagger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rulo180/cf-jagger/issues"
+  },
+  "homepage": "https://github.com/Rulo180/cf-jagger#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "node-sass": "^4.11.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
