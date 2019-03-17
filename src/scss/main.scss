@@ -1,6 +1,10 @@
-$badass: #bada55;
+@import './cover';
+@import './services';
+@import './info';
+@import './team';
+@import './footer';
+
 
 body { 
     margin: 0; 
-    background-color: $badass; 
 }
