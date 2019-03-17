@@ -1,12 +1,4 @@
 import _ from 'lodash';
+import loadHtml from './loadHtml.js';
 
-function component() {
-    let element = document.createElement('div');
-
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Build', 'js'], ' ');
-
-    return element;
-}
-
-document.body.appendChild(component());
+loadHtml();
