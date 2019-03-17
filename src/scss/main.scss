@@ -3,8 +3,34 @@
 @import './info';
 @import './team';
 @import './footer';
+@import './variables';
+
+$navbar-bg: black;
+$navbar-max-height: 55px;
 
 
 body { 
     margin: 0; 
+}
+
+.navbar {
+    max-height: $navbar-max-height;
+    margin-bottom: 50px;
+    background-color: $navbar-bg;
+
+    &__img {
+        // width: 89px;
+        // height: 29px;
+    }
+}
+
+@media only screen and (min-width: $medium-width) {
+    .navbar {
+        &__img {
+            width: 320px;
+            height: 120px;
+            position: relative;
+            top: 25px;
+        }
+    }
 }
