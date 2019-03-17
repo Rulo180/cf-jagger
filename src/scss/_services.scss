@@ -1,0 +1,11 @@
+$services-vertical-padding: 16px;
+
+
+.services {
+	padding: $services-vertical-padding 0;
+
+	&__card {
+		border: solid 1px black;
+		border-radius: 3px;
+	}
+}
