@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Rulo180/cf-jagger#readme",
   "devDependencies": {
     "concurrently": "^4.1.0",
+    "file-loader": "^3.0.1",
     "node-sass": "^4.11.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
