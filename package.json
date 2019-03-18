@@ -5,12 +5,12 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
-    "watch-scss": "node-sass -w src/scss -o src/css  --output-style compressed",
+    "build-scss": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
+    "watch-scss": "node-sass -w src/scss -o dist/css/main.css  --output-style compressed",
     "build-js": "webpack",
     "watch-js": "webpack --watch",
-    "watch": "concurrently \"npm run watch-css\" \"npm run watch-js\"",
-    "build": "concurrently \"npm run build-js\" \"npm run build-css\""
+    "watch": "concurrently \"npm run watch-scss\" \"npm run watch-js\"",
+    "build": "concurrently \"npm run build-js\" \"npm run build-scss\""
   },
   "repository": {
     "type": "git",

@@ -14,7 +14,21 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            outputPath: '../',
+                            outputPath: (url, resourcePath, context) => {
+                                return (url === 'index.html') ? '../' + url : '../pages/' + url;
+                            },
+                            name: '[name].[ext]'
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(png)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: '../static/images',
                             name: '[name].[ext]'
                         }
                     }
