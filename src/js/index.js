@@ -1,4 +1,5 @@
 import _ from 'lodash';
-import loadHtml from './loadHtml.js';
+import loadAssets from './loadAssets.js';
 
-loadHtml();
+//We need to require html and image files to copy then on dist folder (using 'file-loader' with webpack)
+loadAssets();
