@@ -1,9 +1,12 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: {
+        main: './src/js/index.js',
+        carousel: './src/js/carousel.js'
+    },
     output: {
-        filename: 'main.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist/js')
     },
     module: {
@@ -33,6 +36,16 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+              test: /\.(js|jsx)$/,
+              exclude: /(node_modules|bower_components)/,
+              use: {
+                loader: 'babel-loader',
+                options: {
+                  presets: ['@babel/preset-env', '@babel/preset-react']
+                }
+              }
             }
         ]
     }
