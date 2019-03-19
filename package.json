@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-scss": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
-    "watch-scss": "node-sass -w src/scss -o dist/css/main.css  --output-style compressed",
+    "watch-scss": "node-sass -w src/scss -o dist/css --output-style compressed",
     "build-js": "webpack",
     "watch-js": "webpack --watch",
     "watch": "concurrently \"npm run watch-scss\" \"npm run watch-js\"",
@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/Rulo180/cf-jagger#readme",
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
     "concurrently": "^4.1.0",
     "file-loader": "^3.0.1",
     "node-sass": "^4.11.0",
@@ -30,6 +34,8 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   }
 }
