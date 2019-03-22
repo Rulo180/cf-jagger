@@ -7,7 +7,7 @@
 @import './variables';
 
 $navbar-bg: black;
-$navbar-max-height: 55px;
+$navbar-max-height: 110px;
 
 
 body { 
@@ -20,8 +20,9 @@ body {
     background-color: $navbar-bg;
 
     &__img {
-        // width: 89px;
-        // height: 29px;
+        width: 89px;
+        height: 29px;
+    }
     }
 }
 
@@ -31,7 +32,7 @@ body {
             width: 320px;
             height: 120px;
             position: relative;
-            top: 25px;
+            top: 50px;
         }
     }
 }
