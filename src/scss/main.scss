@@ -25,30 +25,22 @@ body {
     }
 }
 
-.underline {
-    &-offset-parent {
-        // background-color: red;
-        position: relative;
-        // top: 20px;
-        // line-height: 70%;
-    }
+.underline-effect {
+    position: relative;
+    font-size: 1.5em;
+    text-shadow: -1px 2px white;
 
-    &-offset-underline {
+    &:before {
+        content: '';
         position: absolute;
-        background-color: red;
+        width: 150%;
+        height: 50%;
+        background-color: $primary;
+        z-index: -1;
         bottom: 0;
         left: -25%;
-        width: 150%;
-        height: 40%;
-        // z-index: 0;
-    }
-
-    &-offset-text {
-        position: relative;
-        // top: -10px;
     }
 }
-
 @media only screen and (min-width: $medium-width) {
     .navbar {
         &__img {
