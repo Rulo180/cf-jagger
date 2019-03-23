@@ -1,16 +1,46 @@
-$services-vertical-padding: 16px;
+$services-padding-top: 24px;
+$services-padding-bottom: 48px;
+$services-title-padding-bottom: 64px;
+$services-icon-size: 90px;
 
 
 .services {
-	padding: $services-vertical-padding 0;
+	padding: $services-padding-top 0 $services-padding-bottom;
+	background: #CA5A16;
+
+	&__title-container {
+		padding-bottom: $services-title-padding-bottom;
+	}
 
 	&__card {
-		border: solid 1px black;
-		border-radius: 3px;
+		position: relative;
+		margin-top: $services-icon-size / 2;
 
 		&-title {
 			text-transform: uppercase;
 			text-align: center;
 		}
+
+		&-header {
+			margin: 0 auto;
+			position: absolute;
+			top: -$services-icon-size / 2;
+			display: flex;
+			align-self: center;
+
+			&-icon {
+				font-size: $services-icon-size;
+			}
+
+			&-bg {
+				color: white;
+			}
+			
+		}
+
+		&-body {
+			margin-top: $services-icon-size;
+		}
+		
 	}
 }
