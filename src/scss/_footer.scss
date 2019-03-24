@@ -1,6 +1,13 @@
-$footer-vertical-padding: 16px;
+$footer-vertical-padding: 32px;
 
 
 .footer {
+	background: black;
 	padding: $footer-vertical-padding 0;
+	color: white;
+
+	&__list {
+		list-style: none;
+		margin: 0;
+	}
 }

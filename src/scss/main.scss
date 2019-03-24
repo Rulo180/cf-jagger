@@ -7,7 +7,12 @@
 @import './pictures';
 
 $navbar-bg: black;
-$navbar-max-height: 110px;
+$navbar-height: 110px;
+$navbar-brand-top-offset: 45px;
+$navbar-img-width-small: 89px;
+$navbar-img-height-small: 29px;
+$navbar-img-width-large: 320px;
+$navbar-img-height-large: 120px;
 
 @function strip-unit($value) {
     @return $value / ($value * 0 + 1);
@@ -78,13 +83,23 @@ h5 {
 }
 
 .navbar {
-    max-height: $navbar-max-height;
     margin-bottom: 50px;
     background-color: $navbar-bg;
 
     &__img {
-        width: 89px;
-        height: 29px;
+        width: $navbar-img-width-small;
+        height: $navbar-img-height-small;
+    }
+}
+
+@media only screen and (min-width: $medium-width) {
+    .navbar {
+        &__img {
+            width: $navbar-img-width-large;
+            height: $navbar-img-height-large;
+            position: relative;
+            top: 50px;
+        }
     }
 }
 
@@ -105,15 +120,5 @@ h5 {
         z-index: -1;
         bottom: 0;
         left: -25%;
-    }
-}
-@media only screen and (min-width: $medium-width) {
-    .navbar {
-        &__img {
-            width: 320px;
-            height: 120px;
-            position: relative;
-            top: 50px;
-        }
     }
 }
