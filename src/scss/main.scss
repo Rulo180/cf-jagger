@@ -106,18 +106,24 @@ h5 {
     }
 }
 
+.z-index-zero {
+    z-index: 0;
+}
+
 .text-shadow-effect {
     text-shadow: -1px 2px white;
 }
 
 .underline-effect {
     position: relative;
+    white-space: nowrap;
+    // z-index: 0;
 
     &:before {
         content: '';
         position: absolute;
         width: 150%;
-        height: 40px;
+        height: 50%;
         background-color: $primary;
         z-index: -1;
         bottom: 0;

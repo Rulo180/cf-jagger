@@ -5,10 +5,15 @@ $info-image-margin-bottom: 16px;
 
 .info {
 	padding: $info-vertical-padding 0;
+}
 
-	&__image {
-		float: left;
-		margin-right: $info-image-margin-right;
-		margin-bottom: $info-image-margin-bottom;
-	}
+/* Using SCSS variables to store breakpoints */
+@media (min-width: $large-width) {
+    .info {
+        &__image {
+            float: left;
+			margin-right: $info-image-margin-right;
+			margin-bottom: $info-image-margin-bottom;
+        }
+    } 
 }
