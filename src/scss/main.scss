@@ -1,17 +1,80 @@
+@import './variables';
 @import './cover';
 @import './services';
 @import './info';
 @import './team';
 @import './footer';
 @import './pictures';
-@import './variables';
 
 $navbar-bg: black;
 $navbar-max-height: 110px;
 
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
 
-body { 
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+  
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+        & {
+            font-size: $min-font-size;
+            @media screen and (min-width: $min-vw) {
+            font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+            // font-size: calc( $min-font-size ~" + " unit($max-font-size - $min-font-size) ~" * ((100vw - " $min-vw ~") /" unit($max-vw - $min-vw) ~")" );
+            }
+            @media screen and (min-width: $max-vw) {
+            font-size: $max-font-size;
+            }
+        }
+    }
+}
+
+html { 
+    @include fluid-type($min-screen-size, $max-screen-size, $min-font-size, $max-font-size);
     margin: 0; 
+    font-family: $font-family;
+    font-weight: 400;
+}
+
+// h1 {
+//     font-size: 72px;
+// }
+
+// h2 {
+//     font-size: 65px;
+// }
+
+h1 {  
+    font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+    @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1*$mod_1 *$min-font-size, $mod_2*$mod_2*$mod_2 *$min-font-size);
+}
+h2 {  
+    font-size: $mod_1*$mod_1*$mod_1 *1rem; 
+    @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1*$mod_1 *$min-font-size, $mod_2*$mod_2*$mod_2 *$min-font-size);
+}
+h3 { 
+    font-size: $mod_1*$mod_1 *1rem;
+    @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1 *$min-font-size, $mod_2*$mod_2 *$min-font-size);
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn {
+    width: 350px;
+    height: 70px;
+    font-family: $font-family;
 }
 
 .navbar {
@@ -34,7 +97,7 @@ body {
         content: '';
         position: absolute;
         width: 150%;
-        height: 50%;
+        height: 40px;
         background-color: $primary;
         z-index: -1;
         bottom: 0;
