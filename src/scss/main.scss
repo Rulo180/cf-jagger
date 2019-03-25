@@ -38,7 +38,7 @@ $navbar-img-height-large: 120px;
     }
 }
 
-html { 
+html, body { 
     @include fluid-type($min-screen-size, $max-screen-size, $min-font-size, $max-font-size);
     margin: 0; 
     font-family: $font-family;
@@ -55,14 +55,17 @@ html {
 
 h1 {  
     font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+    font-family: $title-font-family;
     @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1*$mod_1 *$min-font-size, $mod_2*$mod_2*$mod_2 *$min-font-size);
 }
 h2 {  
     font-size: $mod_1*$mod_1*$mod_1 *1rem; 
+    font-family: $title-font-family;
     @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1*$mod_1 *$min-font-size, $mod_2*$mod_2*$mod_2 *$min-font-size);
 }
 h3 { 
     font-size: $mod_1*$mod_1 *1rem;
+    font-family: $title-font-family;
     @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1 *$min-font-size, $mod_2*$mod_2 *$min-font-size);
 }
 
@@ -92,13 +95,13 @@ h5 {
     }
 }
 
-@media only screen and (min-width: $medium-width) {
+@media only screen and (min-width: $large-width) {
     .navbar {
         &__img {
             width: $navbar-img-width-large;
             height: $navbar-img-height-large;
-            position: relative;
-            top: 50px;
+            position: absolute;
+            top: 0px;
         }
     }
 }
@@ -109,7 +112,6 @@ h5 {
 
 .underline-effect {
     position: relative;
-    font-size: 1.5em;
 
     &:before {
         content: '';
