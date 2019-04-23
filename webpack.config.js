@@ -1,37 +1,20 @@
 const path = require('path');
 
 module.exports = {
-    entry: {
-        main: './src/js/index.js',
-        carousel: './src/js/carousel.js'
-    },
-    output: {
-        filename: '[name].js',
-        path: path.resolve(__dirname, 'dist/js')
+    entry: './src2/index.js',
+    output : {
+        path: path.resolve(__dirname, 'dist2'),
+        filename: 'main.js'
     },
     module: {
         rules: [
-            {
-                test: /\.(html)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            outputPath: (url, resourcePath, context) => {
-                                return (url === 'index.html') ? '../' + url : '../pages/' + url;
-                            },
-                            name: '[name].[ext]'
-                        }
-                    }
-                ]
-            },
             {
                 test: /\.(png|jpg)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
-                            outputPath: '../static/images',
+                            outputPath: '../dist2/static/images',
                             name: '[name].[ext]'
                         }
                     }
@@ -46,7 +29,16 @@ module.exports = {
                   presets: ['@babel/preset-env', '@babel/preset-react']
                 }
               }
+            },
+            {
+                test: /\.scss$/,
+                exclude: /node_modules/,
+                use: ['style-loader', 'css-loader','sass-loader']
             }
         ]
-    }
+    },
+    devServer: {
+        contentBase: './dist2'
+    },
+    watch: true
 };
