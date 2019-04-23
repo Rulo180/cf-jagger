@@ -10,7 +10,9 @@
     "build-js": "webpack",
     "watch-js": "webpack --watch",
     "watch": "concurrently \"npm run watch-scss\" \"npm run watch-js\"",
-    "build": "concurrently \"npm run build-js\" \"npm run build-scss\""
+    "build": "concurrently \"npm run build-js\" \"npm run build-scss\"",
+    "start": "webpack-dev-server --open",
+    "build:new": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -28,10 +30,14 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "concurrently": "^4.1.0",
+    "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
     "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
     "lodash": "^4.17.11",
