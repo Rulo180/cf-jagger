@@ -1,0 +1,18 @@
+.info {
+    padding: 15px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__titleword {
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    p {
+        &.has-border {
+            border-left: 8px solid red;
+            padding-left: 8px;
+        }
+    }
+}
