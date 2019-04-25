@@ -1,0 +1,23 @@
+$icon-size: 28px;
+
+.features {
+    background-color: orange;
+    color: white;
+    &__title {
+        padding-top: $icon-size;
+        padding-bottom: $icon-size/2;
+    }
+    &__item {
+        margin: $icon-size/2 0;
+    }
+    &__icon {
+        img {
+            height: $icon-size;
+        }
+    }
+
+    &__text {
+        text-transform: uppercase;
+        padding-left: 0;
+    }
+}
