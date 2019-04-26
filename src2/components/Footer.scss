@@ -1,0 +1,42 @@
+@import '../pages/Home.scss';
+
+$footer-vertical-padding: 58px;
+
+
+.footer {
+	background: black;
+	padding: $footer-vertical-padding 0;
+	color: white;
+
+	&__title-container {
+		padding-bottom: 44px;
+	}
+
+	&__logo {
+	}
+
+	&__box-section {
+		text-align: center;
+	}
+
+	&__info-list, &__social-list {
+		& > li {
+			background: transparent;
+			padding-left: 0;
+		}
+
+		&-text {
+			padding-left: 8px;
+		}
+	}
+
+	&__social-list i {
+		font-size: 32px;
+	}
+
+	@media screen and (min-width: $medium-width) {
+		&__box-section {
+			text-align: left;
+		}
+	}
+}
