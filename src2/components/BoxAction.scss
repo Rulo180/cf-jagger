@@ -1,0 +1,24 @@
+.box-action {
+    &__image-contanier {
+        padding: 15% 0;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__button {
+        background-color: red;        
+    }
+
+    &__button-wrapper {
+        position: relative;
+    }
+
+    &__button-color {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: red;
+        z-index: -1;
+    }
+}
