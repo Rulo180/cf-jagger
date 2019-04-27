@@ -31,3 +31,11 @@
 		}	
 	}	
 }
+
+@media (min-width: $large-width) {
+	.info {
+		&__titleword {
+			font-size: 60px;
+		}	
+	}	
+}
