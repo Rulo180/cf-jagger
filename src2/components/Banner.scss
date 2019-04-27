@@ -1,0 +1,10 @@
+$banner-padding-top: 24px;
+$banner-padding-bot: 20px;
+
+
+.banner {
+	background: black;
+	color: white;
+	padding: $banner-padding-top $banner-padding-bot;
+
+}
