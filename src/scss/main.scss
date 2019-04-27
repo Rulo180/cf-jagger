@@ -6,14 +6,6 @@
 @import './footer';
 @import './pictures';
 
-$navbar-bg: black;
-$navbar-height: 110px;
-$navbar-brand-top-offset: 45px;
-$navbar-img-width-small: 89px;
-$navbar-img-height-small: 29px;
-$navbar-img-width-large: 320px;
-$navbar-img-height-large: 120px;
-
 @function strip-unit($value) {
     @return $value / ($value * 0 + 1);
 }
