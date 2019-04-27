@@ -1,5 +1,7 @@
+@import '../pages/variables';
+
 .info {
-    padding: 15px 0px;
+    padding: 40px 0px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,9 +12,22 @@
     }
 
     p {
+		text-transform: uppercase;
         &.has-border {
             border-left: 8px solid red;
             padding-left: 8px;
         }
     }
+}
+
+@media (min-width: $medium-width) {
+	.info {
+		padding: 70px 0px;
+		&__titleword {
+			text-align: center;
+			font-size: 48px;
+			line-height: 59px;
+			white-space: nowrap;
+		}	
+	}	
 }
