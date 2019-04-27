@@ -26,7 +26,7 @@ class BoxAction extends React.Component {
                 <div className="box-action__image-contanier" style={imageContainerStyle}>
                     <h2 className="text-center text-white">{this.name}</h2>
                     <div className="text-center">
-                        <button className="box-action__button w-75 pt-2 pb-2 border-0 rounded text-white">¡QUIERO EMPEZAR!</button>
+                        <button className="box-action__button">¡QUIERO EMPEZAR!</button>
                     </div>
                 </div>
                 <div className="box-action__link">

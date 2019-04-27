@@ -1,3 +1,7 @@
+$box-action-btn-pad-vertical: 16px; 
+$box-action-btn-pad-horizontal: 46px; 
+$box-action-btn-radius: 6px;
+
 .box-action {
     &__image-contanier {
         padding: 15% 0;
@@ -5,9 +9,13 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-
+	
     &__button {
-        background-color: red;        
+		background-color: red;
+		padding: $box-action-btn-pad-vertical $box-action-btn-pad-horizontal;
+		border: 0;
+		border-radius: $box-action-btn-radius;
+		color: white; 
     }
 
     &__button-wrapper {
