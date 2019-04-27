@@ -44,8 +44,10 @@ class InfoComponent extends React.Component {
         return (
             <div className="info" style={styleInfo}>
                 <div className="container" style={styleContainer}>
-                    {titles}
-                    {description}
+					<div className="row align-items-md-center">
+						<div className="col-12 col-md-6">{titles}</div>
+						<div className="col-12 col-md-6">{description}</div>
+					</div>
                 </div>
             </div>
         )
