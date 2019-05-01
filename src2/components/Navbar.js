@@ -25,7 +25,7 @@ const Navbar = ({ match }) => {
                         </li>
                         <li class="nav-item">
                             <NavLink class="btn btn-outline-primary navbar__link navbar__link--border" to="/maipu">
-                                Maipu
+                                Maip&uacute;
                             </NavLink>
                         </li>
                         <li class="nav-item">
