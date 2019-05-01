@@ -7,19 +7,19 @@ import './Navbar.scss';
 
 const Navbar = ({ match }) => {
     return (
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-            <div class="container">
-                <NavLink class="navbar-brand" to="/">
-                    <img class="navbar__img" src="static/images/crossfitjagerlogo-03.png" alt="Crossfit Jager" />
+        <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
+            <div className="container">
+                <NavLink className="navbar-brand" to="/">
+                    <img className="navbar__img" src="static/images/crossfitjagerlogo-03.png" alt="Crossfit Jager" />
                 </NavLink>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNavbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNavbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
                 
-                <div class="collapse navbar-collapse" id="globalNavbarContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <NavLink class="nav-link navbar__link" to="/">
+                <div className="collapse navbar-collapse" id="globalNavbarContent">
+                    <ul className="navbar-nav ml-auto">
+                        <li className="nav-item">
+                            <NavLink className="nav-link navbar__link" to="/">
                                 Inicio
                             </NavLink>
                         </li>
@@ -28,13 +28,13 @@ const Navbar = ({ match }) => {
                                 Maip&uacute;
                             </NavLink>
                         </li>
-                        <li class="nav-item">
-                            <NavLink class="btn btn-outline-primary navbar__link navbar__link--border" to="/godoycruz">
+                        <li className="nav-item">
+                            <NavLink className="btn btn-outline-primary navbar__link navbar__link--border" to="/godoycruz">
                                 Godoy Cruz
                             </NavLink>
                         </li>
-                        <li class="nav-item">
-                            <NavLink class="nav-link navbar__link" to="#">
+                        <li className="nav-item">
+                            <NavLink className="nav-link navbar__link" to="#">
                                 Contacto
                             </NavLink>
                         </li>
