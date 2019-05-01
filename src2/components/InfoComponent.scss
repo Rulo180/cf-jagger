@@ -14,7 +14,7 @@
     p {
 		text-transform: uppercase;
         &.has-border {
-            border-left: 8px solid red;
+            border-left: 8px solid $primary;
             padding-left: 8px;
         }
     }
@@ -24,7 +24,6 @@
 	.info {
 		padding: 70px 0px;
 		&__titleword {
-			text-align: center;
 			font-size: 48px;
 			line-height: 59px;
 			white-space: nowrap;
