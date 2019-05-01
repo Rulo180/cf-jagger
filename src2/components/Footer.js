@@ -111,7 +111,7 @@ export class Footer extends Component {
                             <div className="row no-gutters">
                                 <div className="col no-gutters">
                                     <a target="blank" href="https://www.google.com/maps/place/Crossfit+Jager/@-32.980247,-68.7914037,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x967e0cbfee2c9a0b:0x11c9ade047de3920!2sCrossfit+Jager!8m2!3d-32.980247!4d-68.789215!3m4!1s0x967e0cbfee2c9a0b:0x11c9ade047de3920!8m2!3d-32.980247!4d-68.789215">
-                                        <img src="../static/images/gmap-maipu.png" alt="" class="img-fluid" />
+                                        <img src="../static/images/gmap-maipu.png" alt="" className="img-fluid" />
                                     </a>
                                 </div>
                             </div>

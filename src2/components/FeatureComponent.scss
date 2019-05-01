@@ -1,8 +1,11 @@
+@import '../pages/Home.scss';
+
 $icon-size: 28px;
 
 .features {
-    background-color: orange;
-    color: white;
+    background-color: $primary;
+	color: white;
+	padding: 24px 0;
     &__title {
         padding-top: $icon-size;
         padding-bottom: $icon-size/2;
