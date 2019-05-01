@@ -3,13 +3,16 @@ $box-action-btn-pad-horizontal: 46px;
 $box-action-btn-radius: 6px;
 
 .box-action {
-    &__image-contanier {
-        padding: 15% 0;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &__titles-container {
+        text-align: center;
+        color: white;
     }
-	
+    
+    // TODO: se va
     &__button {
 		background-color: red;
 		padding: $box-action-btn-pad-vertical $box-action-btn-pad-horizontal;
@@ -18,10 +21,12 @@ $box-action-btn-radius: 6px;
 		color: white; 
     }
 
+    // TODO: se va
     &__button-wrapper {
         position: relative;
     }
 
+    // TODO: se va
     &__button-color {
         position: absolute;
         height: 100%;
