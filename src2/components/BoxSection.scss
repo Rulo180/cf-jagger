@@ -1,0 +1,81 @@
+@import '../pages/_variables';
+
+$box-action-btn-pad-vertical: 16px; 
+$box-action-btn-pad-horizontal: 46px; 
+$box-action-btn-radius: 6px;
+$box-action-horizontal-offset: -20px;
+$box-action-vertical-offset: -48px;
+$box-section-padding-bottom: 36px;
+$box-section-md-padding-bottom: 72px;
+$box-section-link-margin-bottom: 36px;
+
+.box-section {
+
+    padding-bottom: $box-section-padding-bottom;
+
+    .box-action {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+
+        // TODO: check with inVision
+        padding-top: 120px;
+        padding-bottom: 100px;
+        
+        
+        &__titles-container {
+            text-align: center;
+            color: white;
+        }
+
+        &__link {
+            text-align: center;
+            margin-bottom: $box-section-link-margin-bottom;
+            text-transform: uppercase;
+            a {
+                color: white;
+            }
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            bottom: $box-action-vertical-offset; 
+            width: 90%;
+            height: 290px;
+            background: $primary;
+        }
+
+        &--right-offset {
+
+            &:after {
+                right: $box-action-horizontal-offset;
+            }
+        }
+
+        &--left-offset {
+
+            &:after {
+                left: $box-action-horizontal-offset;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $medium-width) {
+    .box-section {
+        padding-bottom: $box-section-md-padding-bottom;
+    }
+}
+
+@media only screen and (min-width: $large-width) {
+    .box-section {
+        .box-action {
+            &__link {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
