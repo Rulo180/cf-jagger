@@ -1,15 +1,10 @@
+@import '../pages/Home.scss';
+
 $navbar-bg: black;
 $navbar-img-width-small: 113px;
 $navbar-img-height-small: 42px;
 $navbar-img-width-large: 183px;
 $navbar-img-height-large: 68px;
-
-// TODO: this have to be remove when main.scss file is created
-/* Breakpoints */
-$small-width: 576px;
-$medium-width: 768px;
-$large-width: 992px;
-$extra-large-width: 1200px;
 
 
 .navbar {
@@ -28,6 +23,10 @@ $extra-large-width: 1200px;
             border: 3px solid #CA5A16;	
             border-radius: 48px;
         }
+    }
+
+    .btn {
+        padding: 8px 20px;
     }
 }
 

@@ -23,8 +23,8 @@ const Navbar = ({ match }) => {
                                 Inicio
                             </NavLink>
                         </li>
-                        <li class="nav-item">
-                            <NavLink class="btn btn-outline-primary navbar__link navbar__link--border" to="/maipu">
+                        <li className="nav-item">
+                            <NavLink className="btn btn-outline-primary navbar__link navbar__link--border" to="/maipu">
                                 Maip&uacute;
                             </NavLink>
                         </li>

@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import Banner from '../components/Banner';
 import BoxSection from '../components/BoxSection';
 import FeatureComponent from '../components/FeatureComponent';
-import InfoComponent from '../components/InfoComponent';
+import InfoSection from '../components/InfoSection';
 import data from '../info';
 import Cover from '../components/Cover';
 
@@ -15,13 +15,13 @@ const Home = () => (
     <Router>
         <Layout>
             <Route path="/" component={Cover} />
-            <Route path="/" component={() => (<InfoComponent {...data[0]} />)} />
+            <Route path="/" component={() => (<InfoSection {...data[0]} separator />)} />
             <Route path="/" component={BoxSection} />
             <Route path="/" component={Banner}/>
-            <Route path="/" component={() => (<InfoComponent {...data[3]} />)} />
-            <Route path="/" component={() => (<InfoComponent {...data[1]} />)} />
+            {/* <Route path="/" component={() => (<InfoSection {...data[3]} background="gray" />)} /> */}
+            <Route path="/" component={() => (<InfoSection {...data[1]} separator />)} />
             <Route path="/" component={FeatureComponent} />
-            <Route path="/" component={() => (<InfoComponent {...data[2]} />)} />
+            <Route path="/" component={() => (<InfoSection {...data[2]} background={'url(/static/images/tigres.jpg)'} color="white" />)} />
         </Layout>
     </Router>
 );
