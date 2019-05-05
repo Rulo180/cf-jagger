@@ -1,17 +1,24 @@
 @import '../pages/Home.scss';
 
-$icon-size: 28px;
+$icon-size: 23px;
+$padding-vertical-box-xs: 48px;
+$padding-vertical-box-sm: 72px;
+$padding-vertical-box-md: 60px;
+$padding-vertical-box-lg: 52px;
 
 .features {
     background-color: $primary;
 	color: white;
-	padding: 24px 0;
+	padding: $padding-vertical-box-xs 0;
     &__title {
-        padding-top: $icon-size;
-        padding-bottom: $icon-size/2;
-    }
+        //padding-top: $icon-size;
+        //padding-bottom: $icon-size/2;
+	}
+	&__list {
+		padding-left: 28px;
+	}
     &__item {
-        margin: $icon-size/2 0;
+		margin-top: $icon-size;
     }
     &__icon {
         img {
@@ -21,6 +28,59 @@ $icon-size: 28px;
 
     &__text {
         text-transform: uppercase;
-        padding-left: 0;
-    }
+		padding-left: 12px;
+	}
+	
+	&__second-list-mt {
+		margin-top: -$icon-size/2;
+	}
+
+	&__image {
+		margin-top: 32px;
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
+	
+	@media screen and (min-width: $small-width) {
+		padding: $padding-vertical-box-sm 0;
+		&__title {
+			margin-bottom: 55px;
+		}
+		&__list {
+			padding-left: 0px;
+		}
+		&__list div:first-child {
+			margin-top: 0px;
+		}
+		&__second-list-mt {
+			margin-top: 0px;
+		}
+		&__image {
+			img {
+				width: 80%;
+			}
+		}
+	}
+	@media screen and (min-width: $medium-width) {
+		padding: $padding-vertical-box-md 0;
+		&__title {
+			margin-bottom: 60px;
+		}
+	}
+	@media screen and (min-width: $large-width) {
+		padding-top: $padding-vertical-box-lg;
+		padding-bottom: 120px;
+		&__title {
+			margin-bottom: 110px;
+		}
+		&__image {
+			margin-top: 0px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	
 }
