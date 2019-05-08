@@ -1,42 +1,93 @@
 @import '../pages/Home.scss';
 
-$footer-vertical-padding: 58px;
-
+$footer-vertical-padding: 56px;
+$footer-vertical-padding-sm: 60px;
+$footer-vertical-padding-lg: 72px;
 
 .footer {
 	background: black;
 	padding: $footer-vertical-padding 0;
 	color: white;
+	font-size: 12.8px;
+	background-image: url('/static/images/mirafooter.png');
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	background-size: 100% auto;
 
 	&__title-container {
-		padding-bottom: 44px;
+		padding-bottom: 46px;
 	}
 
 	&__logo {
+		padding-bottom: 16px;
 	}
 
 	&__box-section {
 		text-align: center;
 	}
 
-	&__info-list, &__social-list {
+	&__box-title {
+		padding-bottom: 20px;
+	}
+
+	&__info-list {
+		padding-bottom: 20px;
+
 		& > li {
 			background: transparent;
 			padding-left: 0;
+			padding-top: 0.25rem; 
+			padding-bottom: 0.25rem; 
+			a {
+				color: white;
+			}
 		}
 
 		&-text {
-			padding-left: 8px;
+			padding-left: 25px;
 		}
 	}
 
-	&__social-list i {
-		font-size: 32px;
+	&__social-list {
+		padding-bottom: 56px;
+
+		i {
+			font-size: 32px;
+			padding-right: 32px;
+			color: white;
+		}
+	}
+
+	@media screen and (min-width: $small-width) {
+		padding: $footer-vertical-padding-sm 0;
 	}
 
 	@media screen and (min-width: $medium-width) {
+		&__title-container {
+			padding-bottom: 56px;
+		}
+
 		&__box-section {
 			text-align: left;
+		}
+
+		&__social-list {
+			padding-bottom: 72px;
+		}
+	}
+	@media screen and (min-width: $large-width) {
+		padding: $footer-vertical-padding-lg 0;
+
+		&__box-title {
+			padding-bottom: 12px;
+		}
+
+		&__title-container {
+			padding-bottom: 24px;
+		}
+
+		&__logo {
+			padding-bottom: 12px;
 		}
 	}
 }
