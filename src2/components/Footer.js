@@ -26,8 +26,8 @@ export class Footer extends Component {
                             </div>
                             <div className="row justify-content-center no-gutters">
                                 <div className="col-12 col-md-6">
-                                    <section className="footer__box-section text-left">
-                                        <h4 className="footer__box-title mb-0">Box J&auml;ger Maipu</h4>
+                                    <section className="footer__box-section">
+                                        <h4 className="footer__box-title">Box J&auml;ger Maipu</h4>
                                         <ul className="list-group footer__info-list">
                                             <li className="list-group-item">
                                                 <i className="fas fa-map-marker-alt"></i>
@@ -62,8 +62,8 @@ export class Footer extends Component {
                                     </section>
                                 </div>
                                 <div className="col-12 col-md-6">
-                                    <section className="footer__box-section text-left">
-                                        <h4 className="footer__box-title mb-0">Box J&auml;ger Godoy Cruz</h4>
+                                    <section className="footer__box-section">
+                                        <h4 className="footer__box-title">Box J&auml;ger Godoy Cruz</h4>
                                         <ul className="list-group footer__info-list">
                                             <li className="list-group-item">
                                                 <i className="fas fa-map-marker-alt"></i>
