@@ -6,15 +6,15 @@ import Layout from '../components/Layout';
 import Banner from '../components/Banner';
 import BoxSection from '../components/BoxSection';
 import FeatureComponent from '../components/FeatureComponent';
-import Footer from '../components/Footer';
 import InfoComponent from '../components/InfoComponent';
-import Navbar from '../components/Navbar';
 import data from '../info';
+import Cover from '../components/Cover';
 
 
 const Home = () => (
     <Router>
         <Layout>
+            <Route path="/" component={Cover} />
             <Route path="/" component={() => (<InfoComponent {...data[0]} />)} />
             <Route path="/" component={BoxSection} />
             <Route path="/" component={Banner}/>

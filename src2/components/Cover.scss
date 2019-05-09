@@ -1,0 +1,23 @@
+@import '../pages/variables';
+
+$cover-vertical-padding: 48px;
+$cover-vertical-padding-sm: 80px;
+
+.cover {
+    padding-top: $cover-vertical-padding;
+    color: white;
+    background-image: url('/static/images/tigres.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__subtitle {
+        padding-top: 8px;
+        padding-bottom: 100px;
+    }
+    
+	@media screen and (min-width: $small-width) {
+		padding: $cover-vertical-padding-sm 0;
+    }
+    
+}
