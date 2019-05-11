@@ -13,11 +13,11 @@ class InfoSection extends React.Component {
             color,
          } = this.props;
 
-        const titles = title.map((word, idx) => <h1 className="text-uppercase" key={idx}>{word}</h1>);
+        const titles = title.map((word, idx) => <h2 className="text-uppercase" key={idx}>{word}</h2>);
 
         const styleInfo = {
             background: (background) ? background : '',
-            color: (background) ? color : '',
+            color: (background) ? 'white' : '',
         };
 
         const containerClasses = classNames(
