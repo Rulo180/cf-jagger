@@ -11,6 +11,14 @@ const info = [
         title: ["¡no hay", "excusas!"],
         description: "En crossfit trabajamos con las clases grupales, un profesor o más, explicando la técnica de los ejercicios, mostrando variantes y corrigiendo. La buena noticia es que solamente necesitas de 1hr por día."
     },
+    {
+        color: 'white',
+        backgroundImage: 'tigres.jpg',
+        title: [""],
+        noTitle: true,
+        hasBorder: false,
+        description: [{text: "CrossFit...", uppercase: false}, "Es un programa de preparación física general amplio en <b>inclusivo</b>", "a través de movimientos dinámicos y <b>seguros</b>. Utilizamos ejercicios de peso corporal ejercicios con dominio de algún objeto externo. Que nos van a permitir mejorar una amplia gama de capacidades físicas."]
+    }
 ];
 
 export default info;
