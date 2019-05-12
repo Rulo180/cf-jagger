@@ -11,8 +11,8 @@ $footer-vertical-padding-lg: 72px;
 	font-size: 12.8px;
 	background-image: url('/static/images/mirafooter.png');
 	background-repeat: no-repeat;
-	background-position: 0% 100%;
-	background-size: 100% auto;
+	background-position: 45% 120%;
+	background-size: 175% auto;
 
 	&__title-container {
 		padding-bottom: 46px;
@@ -55,11 +55,18 @@ $footer-vertical-padding-lg: 72px;
 		}
 	}
 
+	.fas {
+		font-size: 16px;
+	}
+
 	@media screen and (min-width: $small-width) {
 		padding: $footer-vertical-padding-sm 0;
 	}
 
 	@media screen and (min-width: $medium-width) {
+		background-position: -50% 100%;
+		background-size: 80% auto;
+
 		&__title-container {
 			padding-bottom: 56px;
 		}
@@ -74,6 +81,8 @@ $footer-vertical-padding-lg: 72px;
 	}
 	@media screen and (min-width: $large-width) {
 		padding: $footer-vertical-padding-lg 0;
+		background-position: 0% 100%;
+		background-size: 50% auto;
 
 		&__box-title {
 			padding-bottom: 12px;

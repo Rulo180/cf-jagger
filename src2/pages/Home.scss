@@ -1,6 +1,7 @@
 @import './variables';
 @import "node_modules/bootstrap/scss/bootstrap";
 
+
 $mod_1: 1.125; // mobile
 $mod_2: 1.250; // desktop
 
@@ -38,7 +39,6 @@ html, body {
 h1 {  
     font-size: $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
     font-family: $title-font-family;
-    line-height: 75px;
     @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$min-font-size, $mod_2*$mod_2*$mod_2 * $mod_2*$mod_2*$mod_2 *$min-font-size);
 }
 h2 {  
@@ -70,5 +70,5 @@ p {
     font-family: $font-family;
     font-weight: 500;	
     line-height: 19px;
-    padding: 16px 44px;
+    padding: $btn-vertical-padding $btn-horizontal-padding;
 }

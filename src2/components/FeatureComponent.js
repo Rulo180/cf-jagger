@@ -44,7 +44,7 @@ class FeatureComponent extends React.Component {
                 <div className="container">
 					<div className="row">
 						<div className="col-12 col-lg-6">
-							<h1 className="features__title">MEJORAS EN...</h1>
+							<h1 className="features__title mb-0">MEJORAS EN...</h1>
 							{featuresList}
 						</div>
 						<div className="features__image col-12 col-lg-6">
