@@ -20,4 +20,8 @@ $banner-lead-text-spacing: 5px;
 		font-weight: 900;
 		line-height: 38px;
 	}
+
+	@media screen and (min-width: $small-width){
+		text-align: center;
+	}
 }

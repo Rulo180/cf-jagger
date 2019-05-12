@@ -1,10 +1,12 @@
-@import '../pages/Home.scss';
+@import '../pages/variables';
 
 $navbar-bg: black;
 $navbar-img-width-small: 113px;
 $navbar-img-height-small: 42px;
 $navbar-img-width-large: 183px;
 $navbar-img-height-large: 68px;
+$navbar-btn-vertical-padding: 8px;
+$navbar-btn-horizontal-padding: 20px;
 
 
 .navbar {
@@ -27,6 +29,7 @@ $navbar-img-height-large: 68px;
 
     .btn {
         padding: 8px 20px;
+        border-radius: $btn-border-radius;
     }
 }
 

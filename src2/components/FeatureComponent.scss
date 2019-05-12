@@ -5,20 +5,27 @@ $padding-vertical-box-xs: 48px;
 $padding-vertical-box-sm: 72px;
 $padding-vertical-box-md: 60px;
 $padding-vertical-box-lg: 52px;
+$features-title-padding-bottom: 36px;
+$features-title-sm-padding-bottom: 56px;
+$features-title-md-padding-bottom: 60px;
+$features-title-lg-padding-bottom: 110px;
+$features-item-padding-bottom: 20px;
+$features-item-sm-padding-bottom: 40px;
+
 
 .features {
     background-color: $primary;
 	color: white;
 	padding: $padding-vertical-box-xs 0;
+
     &__title {
-        //padding-top: $icon-size;
-        //padding-bottom: $icon-size/2;
+		padding-bottom: $features-title-padding-bottom;
 	}
 	&__list {
 		padding-left: 28px;
 	}
     &__item {
-		margin-top: $icon-size;
+		padding-bottom: $features-item-padding-bottom;
     }
     &__icon {
         img {
@@ -31,10 +38,6 @@ $padding-vertical-box-lg: 52px;
 		padding-left: 12px;
 	}
 	
-	&__second-list-mt {
-		margin-top: -$icon-size/2;
-	}
-
 	&__image {
 		margin-top: 32px;
 		text-align: center;
@@ -46,17 +49,16 @@ $padding-vertical-box-lg: 52px;
 	@media screen and (min-width: $small-width) {
 		padding: $padding-vertical-box-sm 0;
 		&__title {
-			margin-bottom: 55px;
+			padding-bottom: $features-title-sm-padding-bottom;
 		}
 		&__list {
 			padding-left: 0px;
 		}
-		&__list div:first-child {
-			margin-top: 0px;
+
+		&__item {
+			padding-bottom: $features-item-sm-padding-bottom;
 		}
-		&__second-list-mt {
-			margin-top: 0px;
-		}
+
 		&__image {
 			img {
 				width: 80%;
@@ -66,14 +68,14 @@ $padding-vertical-box-lg: 52px;
 	@media screen and (min-width: $medium-width) {
 		padding: $padding-vertical-box-md 0;
 		&__title {
-			margin-bottom: 60px;
+			padding-bottom: $features-title-md-padding-bottom;
 		}
 	}
 	@media screen and (min-width: $large-width) {
 		padding-top: $padding-vertical-box-lg;
 		padding-bottom: 120px;
 		&__title {
-			margin-bottom: 110px;
+			padding-bottom: $features-title-lg-padding-bottom;
 		}
 		&__image {
 			margin-top: 0px;
