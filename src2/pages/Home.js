@@ -9,6 +9,7 @@ import FeatureComponent from '../components/FeatureComponent';
 import InfoSection from '../components/InfoSection';
 import data from '../info';
 import Cover from '../components/Cover';
+import WhatIs from '../components/WhatIs';
 
 
 const Home = () => (
@@ -18,7 +19,7 @@ const Home = () => (
             <Route path="/" component={() => (<InfoSection {...data[0]} separator />)} />
             <Route path="/" component={BoxSection} />
             <Route path="/" component={Banner}/>
-            {/* <Route path="/" component={() => (<InfoSection {...data[3]} background="gray" />)} /> */}
+            <Route path="/" component={WhatIs} />
             <Route path="/" component={() => (<InfoSection {...data[1]} separator />)} />
             <Route path="/" component={FeatureComponent} />
             <Route path="/" component={() => (<InfoSection {...data[2]} background={'url(/static/images/tigres.jpg)'} color="white" />)} />

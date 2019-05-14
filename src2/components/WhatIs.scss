@@ -1,0 +1,16 @@
+$whatis-vertical-padding: 44px;
+// $footer-vertical-padding-sm: 60px;
+// $footer-vertical-padding-lg: 72px;
+
+.whatis {
+	background-image: url('/static/images/tigres.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: cover;
+    color: white;
+    padding: $whatis-vertical-padding 0;
+
+    p {
+        padding-top:8px;
+    }
+}
