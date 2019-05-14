@@ -28,11 +28,11 @@ class InfoSection extends React.Component {
         return (
             <div className="info" style={styleInfo}>
                 <div className="container">
-					<div className="row align-items-md-center">
-                        <div className="col-12 col-md-6">
+					<div className="row align-items-sm-center">
+                        <div className="col-12 col-sm-6">
                             {titles}
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-sm-6">
                             <div className={containerClasses}>
                                 <p className="info__description-text">
                                     {description}
