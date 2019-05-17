@@ -4,15 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-scss": "node-sass --include-path scss src/scss/main.scss dist/css/main.css --output-style compressed",
-    "watch-scss": "node-sass -w src/scss -o dist/css --output-style compressed",
-    "build-js": "webpack",
-    "watch-js": "webpack --watch",
-    "watch": "concurrently \"npm run watch-scss\" \"npm run watch-js\"",
-    "build": "concurrently \"npm run build-js\" \"npm run build-scss\"",
     "start": "webpack-dev-server --open",
-    "build:new": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
