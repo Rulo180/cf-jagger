@@ -21,6 +21,18 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(html)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: '../dist/',
+                            name: '[name].[ext]'
+                        }
+                    }
+                ]
+            },
+            {
               test: /\.(js|jsx)$/,
               exclude: /(node_modules|bower_components)/,
               use: {
