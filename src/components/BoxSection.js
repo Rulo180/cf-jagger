@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './BoxSection.scss';
 
@@ -32,7 +33,7 @@ class BoxSection extends React.Component {
                             <div className="box-action__link">
                                 <div className="row">
                                     <div className="col">
-                                        <a href="/godoycruz" className="btn btn-link">Ver Box</a>
+                                        <Link to="/godoycruz" className="btn btn-link">Ver Box</Link>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +48,7 @@ class BoxSection extends React.Component {
                             <div className="box-action__link">
                                 <div className="row">
                                     <div className="col">
-                                        <a href="/maipu" className="btn btn-link">Ver Box</a>
+                                        <Link to="/maipu" className="btn btn-link">Ver Box</Link>
                                     </div>
                                 </div>
                             </div>
