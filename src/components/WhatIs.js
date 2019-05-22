@@ -7,7 +7,7 @@ class WhatIs extends React.Component {
         return (
             <div className="whatis">
                 <div className="container">
-                    <div class="row">
+                    <div className="row">
                         <div className="col col-sm-7 col-lg-6">
                             <h3>CrossFit...</h3>
                             <p>ES UN PROGRAMA DE PREPARACIÓN FÍSICA GENERAL, AMPLIO E INCLUSIVO</p>
