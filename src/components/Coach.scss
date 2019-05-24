@@ -1,0 +1,52 @@
+@import '../pages/variables';
+
+// $info-vertical-padding: 60px;
+// $info--md-vertical-padding: 60px;
+
+$coach-padding-top-lg: 72px;
+$coach-padding-bottom-lg: 78px;
+
+
+.coach {
+    // padding: $info-vertical-padding 0px;
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    &__description {
+        &-container {
+            margin-top: 76px;
+            position: relative;
+            &--separator:after {
+                content: '';
+                position: absolute;
+                top: -2.5%;
+                left: -15px;
+                width: 8px;
+                height: 105%;
+                background: $primary;
+            }
+        }
+
+        &-text {
+            text-transform: uppercase;
+        }
+    }
+    
+    &__image {
+        width: 100%;
+    }
+
+    @media (min-width: $large-width) {
+        padding-top: $coach-padding-top-lg;
+        padding-bottom: $coach-padding-bottom-lg;
+        // &__title {
+        // }	
+    }
+}
+
+// @media (min-width: $medium-width) {
+// 	.info {
+//         padding: $info-vertical-padding 0px;
+    
+// 	}	
+// }
