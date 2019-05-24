@@ -21,6 +21,10 @@ $banner-lead-text-spacing: 5px;
 		line-height: 38px;
 	}
 
+	.btn {
+		border-radius: 6px;
+	}
+
 	@media screen and (min-width: $small-width){
 		text-align: center;
 	}
