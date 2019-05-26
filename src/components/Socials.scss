@@ -1,0 +1,21 @@
+@import '../pages/variables';
+
+
+$socials-vert-padding: 30px;
+
+.socials {
+    padding: $socials-vert-padding 0;
+    background: $primary;
+    color: white;
+
+    &__title {
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+        margin-bottom: 0;
+    }
+
+    &__link {
+        font-size: 40px;
+        color: white;
+    }
+}

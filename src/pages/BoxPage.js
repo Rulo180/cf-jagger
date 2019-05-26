@@ -6,6 +6,7 @@ import Coach from '../components/Coach';
 import CoverBox from '../components/CoverBox';
 import InfoSection from '../components/InfoSection';
 import Services from '../components/Services';
+import Socials from '../components/Socials';
 
 
 export class BoxPage extends Component {
@@ -13,10 +14,11 @@ export class BoxPage extends Component {
         return (
             <main>
                 <CoverBox />
-                <Coach separator />
                 {/* <InfoSection title={"J&auml;ger Maip&aacute;"} description="Hola a todos" /> */}
                 <Services />
                 <Banner />
+                <Coach separator />
+                <Socials />
             </main>
         )
     }

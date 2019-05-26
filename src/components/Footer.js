@@ -49,13 +49,13 @@ export class Footer extends Component {
                                             </li>
                                         </ul>
                                         <div className="footer__social-list">
-                                            <a href="tel:2614166859">
+                                            <a href="tel:2614166859" target="blank">
                                                 <i className="fab fa-whatsapp"></i>
                                             </a>
-                                            <a href="https://www.instagram.com/crossfitjager/">
+                                            <a href="https://www.instagram.com/crossfitjager/" target="blank">
                                                 <i className="fab fa-instagram"></i>
                                             </a>
-                                            <a href="https://www.facebook.com/crossfitjager/">
+                                            <a href="https://www.facebook.com/crossfitjager/" target="blank">
                                                 <i className="fab fa-facebook-square"></i>
                                             </a>
                                         </div>
@@ -85,13 +85,13 @@ export class Footer extends Component {
                                             </li>
                                         </ul>
                                         <div className="footer__social-list">
-                                            <a href="tel:2614166859">
+                                            <a href="tel:2614166859" target="blank">
                                                 <i className="fab fa-whatsapp"></i>
                                             </a>
-                                            <a href="https://www.instagram.com/crossfitjager/">
+                                            <a href="https://www.instagram.com/crossfitjager/" target="blank">
                                                 <i className="fab fa-instagram"></i>
                                             </a>
-                                            <a href="https://www.facebook.com/crossfitjager/">
+                                            <a href="https://www.facebook.com/crossfitjager/" target="blank">
                                                 <i className="fab fa-facebook-square"></i>
                                             </a>
                                         </div>
