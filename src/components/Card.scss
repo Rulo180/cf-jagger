@@ -1,0 +1,55 @@
+@import '../pages/_variables';
+
+$card-icon-size: 90px;
+$card-header-offset: -55px;
+$card-lg-header-offset: -70px;
+$card-padding: 24px;
+$card-border-radius: 12px;
+$card-title-margin-bottom: 20px;
+
+
+.card {
+    position: relative;
+    margin-top: $card-icon-size / 2;
+    color: $secondary;
+    border-radius: $card-border-radius;
+
+    &-title {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: $card-title-margin-bottom;
+    }
+
+    &-header {
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        top: $card-header-offset;
+        display: flex;
+        align-self: center;
+        /* Bootstrap overwrite start*/
+        border-bottom: 0;
+        background: transparent;
+        /* Bootstrap overwrite end*/
+
+        &-icon {
+            font-size: $card-icon-size;
+        }
+
+        &-bg {
+            color: white;
+        }
+        
+    }
+
+    &-body {
+        margin-top: $card-icon-size;
+        padding: 0 $card-padding $card-padding;
+    }
+    
+    @media screen and (min-width: $large-width) {
+        &-header {
+            top: $card-lg-header-offset;
+        }
+    }
+}

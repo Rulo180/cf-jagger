@@ -1,12 +1,12 @@
 import React from 'react';
 
 import './Home.scss';
+import data from '../info';
 import Banner from '../components/Banner';
+import Cover from '../components/Cover';
 import BoxSection from '../components/BoxSection';
 import FeatureComponent from '../components/FeatureComponent';
 import InfoSection from '../components/InfoSection';
-import data from '../info';
-import Cover from '../components/Cover';
 import WhatIs from '../components/WhatIs'; 
 
 
