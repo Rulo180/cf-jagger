@@ -7,6 +7,7 @@ $navbar-img-width-large: 183px;
 $navbar-img-height-large: 68px;
 $navbar-btn-vertical-padding: 8px;
 $navbar-btn-horizontal-padding: 20px;
+$navbar-btn-border-radius: 50px; 
 
 
 .navbar {
@@ -21,15 +22,11 @@ $navbar-btn-horizontal-padding: 20px;
         color: white !important;
         line-height: 19px;
 
-        &--border {
+        &--border.btn {
             border: 3px solid #CA5A16;	
-            border-radius: 48px;
+            padding: 8px 20px;
+            border-radius: $navbar-btn-border-radius;
         }
-    }
-
-    .btn {
-        padding: 8px 20px;
-        border-radius: $btn-border-radius;
     }
 }
 

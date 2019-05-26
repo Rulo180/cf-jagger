@@ -1,16 +1,23 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import CoverBox from '../components/CoverBox';
+import Banner from '../components/Banner';
 import Coach from '../components/Coach';
+import CoverBox from '../components/CoverBox';
+import InfoSection from '../components/InfoSection';
+import Services from '../components/Services';
+
 
 export class BoxPage extends Component {
     render() {
         return (
-            <React.Fragment>
+            <main>
                 <CoverBox />
                 <Coach separator />
-            </React.Fragment>
+                {/* <InfoSection title={"J&auml;ger Maip&aacute;"} description="Hola a todos" /> */}
+                <Services />
+                <Banner />
+            </main>
         )
     }
 }

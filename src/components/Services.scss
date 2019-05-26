@@ -1,0 +1,18 @@
+@import '../pages/_variables';
+
+$services-vertical-padding: 60px;
+$services-title-padding-bottom: 64px;
+
+
+.services {
+	background: $primary;
+	color: white;
+	padding: $services-vertical-padding 0;
+
+	&__title {
+		padding-bottom: $services-title-padding-bottom;
+		/* Bootstrap overwrite start */
+		margin-bottom: 0;
+		/* Bootstrap overwrite end */
+	}
+}
