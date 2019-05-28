@@ -1,0 +1,74 @@
+@import '../pages/_variables';
+
+$carousel-padding-top-xs: 33px;
+$carousel-padding-bottom-xs: 64px;
+$carousel-padding-top-lg: 72px;
+$carousel-padding-bottom-lg: 72px;
+
+.carousel {
+    padding-top: $carousel-padding-top-xs;
+    padding-bottom: $carousel-padding-bottom-xs;
+
+    &__title {
+        padding-bottom: 30px;
+    }
+
+    &__images-container {
+        overflow: hidden;
+    }
+
+    &__image {
+        display: inline-block;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__arrow-left {
+        position: absolute;
+        height: 100%;
+        width: 80px;
+    }
+
+    &__arrow-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 100%;
+        margin-right: 15px;
+    }
+
+    &__arrow-image {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    &__slider {
+        -webkit-transition: margin-left 2s; /* Safari */
+        transition: margin-left 2s;
+    }
+
+    &__big-image {
+        margin-top: 68px;
+        margin-bottom: 72px;
+        padding-top: 66%;    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media only screen and (min-width: $large-width) {
+    .carousel {
+        padding-top: $carousel-padding-top-lg;
+        padding-bottom: $carousel-padding-bottom-lg;
+
+        &__title{
+            padding-bottom: 72px;
+        }
+    }
+}
