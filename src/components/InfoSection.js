@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 import './InfoSection.scss';
 
+
 class InfoSection extends React.Component {
     render() {
         const { 

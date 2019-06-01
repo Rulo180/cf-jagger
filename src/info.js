@@ -18,7 +18,11 @@ const info = [
         noTitle: true,
         hasBorder: false,
         description: [{text: "CrossFit...", uppercase: false}, "Es un programa de preparación física general amplio en <b>inclusivo</b>", "a través de movimientos dinámicos y <b>seguros</b>. Utilizamos ejercicios de peso corporal ejercicios con dominio de algún objeto externo. Que nos van a permitir mejorar una amplia gama de capacidades físicas."]
-    }
+    },
+    {
+        title: ["Jäger Maipú"],
+        description: "Ubicado en el centro de Maipú, se encuentra nuestro box de CrossFit, especialmente diseñado para atender todas las necesidades de nuestros atletas. <br />Estamos en Ozamis 457, Maipú, Mendoza.",
+    },
 ];
 
 export default info;

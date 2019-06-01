@@ -7,6 +7,7 @@ import InfoSection from '../components/InfoSection';
 import Services from '../components/Services';
 import Socials from '../components/Socials';
 import {MAIPU_SOCIALS_INFO} from '../constants';
+import data from '../info';
 
 
 export class MaipuPage extends Component {
@@ -14,7 +15,7 @@ export class MaipuPage extends Component {
         return (
             <main>
                 <CoverBox />
-                {/* <InfoSection title={"J&auml;ger Maip&aacute;"} description="Hola a todos" /> */}
+                <InfoSection separator {...data[4]} />
                 <Services />
                 <Banner />
                 <Coach separator />
