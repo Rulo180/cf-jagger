@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 import Banner from '../components/Banner';
 import Coach from '../components/Coach';
@@ -9,7 +8,7 @@ import Services from '../components/Services';
 import Socials from '../components/Socials';
 
 
-export class BoxPage extends Component {
+export class MaipuPage extends Component {
     render() {
         return (
             <main>
@@ -24,8 +23,4 @@ export class BoxPage extends Component {
     }
 }
 
-BoxPage.propTypes = {
-
-};
-
-export default BoxPage
+export default MaipuPage;
