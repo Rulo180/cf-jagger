@@ -3,14 +3,16 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import BoxPage from './pages/BoxPage';
+import MaipuPage from './pages/MaipuPage';
+import GodoyCruzPage from './pages/GodoyCruzPage';
 
 
 const App = () => (
     <Router>
         <Layout>
 			<Switch>
-	            <Route path="/maipu" component={() => <BoxPage place='maipu'/>} />
+	            <Route path="/maipu" component={MaipuPage} />
+	            <Route path="/godoycruz" component={GodoyCruzPage} />
 				<Route exact path="/" component={Home} />
 			</Switch>
         </Layout>
