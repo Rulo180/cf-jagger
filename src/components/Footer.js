@@ -27,7 +27,7 @@ export class Footer extends Component {
                             <div className="row justify-content-center no-gutters">
                                 <div className="col-12 col-md-6">
                                     <section className="footer__box-section">
-                                        <h4 className="footer__box-title">Box J&auml;ger Maipu</h4>
+                                        <h4 className="footer__box-title">Box J&auml;ger Maip&uacute;</h4>
                                         <ul className="list-group footer__info-list">
                                             <li className="list-group-item">
                                                 <i className="fas fa-map-marker-alt"></i>
@@ -88,10 +88,10 @@ export class Footer extends Component {
                                             <a href="tel:2614166859" target="blank">
                                                 <i className="fab fa-whatsapp"></i>
                                             </a>
-                                            <a href="https://www.instagram.com/crossfitjager/" target="blank">
+                                            <a href="https://www.instagram.com/crossfitjagergc/" target="blank">
                                                 <i className="fab fa-instagram"></i>
                                             </a>
-                                            <a href="https://www.facebook.com/crossfitjager/" target="blank">
+                                            <a href="https://www.facebook.com/crossfitjagergc/" target="blank">
                                                 <i className="fab fa-facebook-square"></i>
                                             </a>
                                         </div>

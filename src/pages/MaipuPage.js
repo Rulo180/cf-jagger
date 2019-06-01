@@ -6,6 +6,7 @@ import CoverBox from '../components/CoverBox';
 import InfoSection from '../components/InfoSection';
 import Services from '../components/Services';
 import Socials from '../components/Socials';
+import {MAIPU_SOCIALS_INFO} from '../constants';
 
 
 export class MaipuPage extends Component {
@@ -17,7 +18,7 @@ export class MaipuPage extends Component {
                 <Services />
                 <Banner />
                 <Coach separator />
-                <Socials />
+                <Socials socials={MAIPU_SOCIALS_INFO} />
             </main>
         )
     }

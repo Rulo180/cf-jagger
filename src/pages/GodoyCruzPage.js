@@ -5,6 +5,7 @@ import Coach from '../components/Coach';
 import CoverBox from '../components/CoverBox';
 import InfoSection from '../components/InfoSection';
 import Socials from '../components/Socials';
+import {GODOY_CRUZ_SOCIALS_INFO} from '../constants';
 
 
 export class GodoyCruzPage extends Component {
@@ -14,7 +15,7 @@ export class GodoyCruzPage extends Component {
                 <CoverBox />
                 {/* <InfoSection title={"J&auml;ger Maip&aacute;"} description="Hola a todos" /> */}
                 <Banner />
-                <Socials />
+                <Socials socials={GODOY_CRUZ_SOCIALS_INFO}/>
             </main>
         )
     }
