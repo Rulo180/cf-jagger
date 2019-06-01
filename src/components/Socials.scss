@@ -2,6 +2,8 @@
 
 
 $socials-vert-padding: 30px;
+$socials-icon-size: 45px;
+$socials-item-pad-left: 60px;
 
 .socials {
     padding: $socials-vert-padding 0;
@@ -15,7 +17,16 @@ $socials-vert-padding: 30px;
     }
 
     &__link {
-        font-size: 40px;
+        font-size: $socials-icon-size;
         color: white;
+    }
+
+    &__social-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__social-item {
+        padding-left: $socials-item-pad-left;
     }
 }
