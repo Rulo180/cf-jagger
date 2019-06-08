@@ -12,11 +12,14 @@ $info--md-vertical-padding: 60px;
 
     &__description {
         &-container {
+			&--separator {
+				padding-left: 16px;
+			}
             &--separator:after {
                 content: '';
                 position: absolute;
                 top: -5%;
-                left: 0;
+                left: 16px;
                 width: 8px;
                 height: 110%;
                 background: $primary;
