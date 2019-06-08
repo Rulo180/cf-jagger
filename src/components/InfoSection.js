@@ -35,9 +35,7 @@ class InfoSection extends React.Component {
                         </div>
                         <div className="col-12 col-sm-6">
                             <div className={containerClasses}>
-                                <p className="info__description-text">
-                                    {description}
-                                </p>
+                                <p className="info__description-text" dangerouslySetInnerHTML={{__html: description}}></p>
                             </div>
                         </div>
 					</div>
