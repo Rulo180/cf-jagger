@@ -27,7 +27,7 @@ class InfoSection extends React.Component {
         );
 
         return (
-            <div className="info" style={styleInfo}>
+            <section className="info" style={styleInfo}>
                 <div className="container">
 					<div className="row align-items-sm-center">
                         <div className="col-12 col-sm-6">
@@ -42,7 +42,7 @@ class InfoSection extends React.Component {
                         </div>
 					</div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

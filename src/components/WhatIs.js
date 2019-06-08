@@ -5,7 +5,7 @@ import './WhatIs.scss';
 class WhatIs extends React.Component {
     render() {
         return (
-            <div className="whatis">
+            <section className="whatis">
                 <div className="container">
                     <div className="row">
                         <div className="col col-sm-7 col-lg-6">
@@ -15,7 +15,7 @@ class WhatIs extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

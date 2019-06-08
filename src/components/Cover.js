@@ -9,7 +9,7 @@ class Cover extends React.Component {
 
     render() {
         return (
-            <div className="cover">
+            <section className="cover">
                 <div className="container">
 					<div className="row">
 						<div className="col-12">
@@ -20,7 +20,7 @@ class Cover extends React.Component {
 						<div className="col"></div>
 					</div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

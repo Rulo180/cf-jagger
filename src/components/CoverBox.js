@@ -8,17 +8,18 @@ class CoverBox extends React.Component {
     }
 
     render() {
+        const { actionLink } = this.props;
         return (
-            <div className="cover-box">
+            <section className="cover-box">
                 <div className="container">
 					<div className="row">
 						<div className="col-12">
                             <h3>¡Tu primera clase de prueba GRATIS!</h3>
                         </div>
-                        <button className="btn btn-primary cover-box__button">¡QUIERO EMPEZAR!</button>
+                        <a href={actionLink} className="btn btn-primary cover-box__button">¡QUIERO EMPEZAR!</a>
 					</div>
                 </div>
-            </div>
+            </section>
         )
     }
 }
