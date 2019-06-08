@@ -26,7 +26,10 @@ $carousel-padding-bottom-lg: 72px;
     &__arrow-left {
         position: absolute;
         height: 100%;
-        width: 80px;
+		width: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
     }
 
     &__arrow-right {
@@ -36,6 +39,9 @@ $carousel-padding-bottom-lg: 72px;
         width: 80px;
         height: 100%;
         margin-right: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
     }
 
     &__arrow-image {
@@ -59,7 +65,12 @@ $carousel-padding-bottom-lg: 72px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-    }
+	}
+	
+	i {
+		color: white;
+		font-size: 40px;
+	}
 }
 
 @media only screen and (min-width: $large-width) {
