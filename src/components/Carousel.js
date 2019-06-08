@@ -59,23 +59,17 @@ class SmallImagesCarousel extends React.Component {
     resizeListener() {
         let quantityImagesShowed = 3;
         let showBigImage = true;
-        console.log("window.innerWidth", window.innerWidth);
         if(window.innerWidth <= 768) {
             quantityImagesShowed = 1;
             showBigImage = false;
-        }
-        // if(window.innerWidth <= 576) {
-        //     quantityImagesShowed = 1;
-        //     showBigImage = false;
-        // }
+		}
         const node = this.myRef.current;
         const containerImagesWidth = node.offsetWidth;
         const imageWidth = (containerImagesWidth - this.spaceBetweenImagesInPx * (quantityImagesShowed-1)) / quantityImagesShowed;
         const sliderWidth = Math.ceil((imageWidth + this.spaceBetweenImagesInPx) * IMAGES.length );
         const imageHeight = imageWidth * 0.66;
         this.setState({imageWidth, imageHeight, sliderWidth, quantityImagesShowed}, () => {
-            console.log("this.state", this.state);
-            this.props.changeOnShowBigImage(showBigImage)
+            this.props.changeOnShowBigImage(showBigImage);
         });
     }
 
@@ -100,7 +94,7 @@ class SmallImagesCarousel extends React.Component {
             <div className="col-lg-12">
                 <div className="carousel__images-container" ref={this.myRef}>
                     <div className="carousel__arrow-left" onClick={this.onClickArrow('left')}>
-                        <img className="carousel__arrow-image" src="static/images/icon-circle.png" />
+						<i className="fas fa-chevron-left"></i>
                     </div>  
                     <div className="row carousel__slider" style={imagesContainerStyle}>
                         <div>
@@ -116,7 +110,7 @@ class SmallImagesCarousel extends React.Component {
                         </div>
                     </div>
                     <div className="carousel__arrow-right" onClick={this.onClickArrow('right')}>
-                        <img className="carousel__arrow-image" src="static/images/icon-circle.png" />
+						<i className="fas fa-chevron-right"></i>
                     </div>
                 </div>
             </div>
