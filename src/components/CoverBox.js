@@ -14,7 +14,7 @@ class CoverBox extends React.Component {
                 <div className="container">
 					<div className="row">
 						<div className="col-12">
-                            <h3>¡Tu primera clase de prueba GRATIS!</h3>
+                            <h3 className="cover-box__title">¡Tu primera clase de prueba GRATIS!</h3>
                         </div>
                         <a href={actionLink} className="btn btn-primary cover-box__button">¡QUIERO EMPEZAR!</a>
 					</div>
