@@ -6,8 +6,10 @@ import './Footer.scss'
 
 export class Footer extends Component {
     render() {
+        const { footerRef } = this.props;
+
         return (
-            <div className="footer">
+            <section className="footer" ref={footerRef}>
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-12 col-sm-8 col-md-10 col-lg-6">
@@ -110,7 +112,7 @@ export class Footer extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

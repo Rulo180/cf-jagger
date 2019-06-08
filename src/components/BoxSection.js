@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './BoxSection.scss';
+import { MAIPU_APP_LINK, GODOY_CRUZ_APP_LINK } from '../constants';
 
 
 class BoxSection extends React.Component {
@@ -27,7 +28,7 @@ class BoxSection extends React.Component {
                             <div className="box-action box-action--right-offset" style={imageContainerStyle}>
                                 <div className="box-action__titles-container">
                                     <h4 className="box-action__title">Box Godoy Cruz</h4>
-                                    <button className="btn btn-primary">¡QUIERO EMPEZAR!</button>
+                                    <a href={GODOY_CRUZ_APP_LINK} className="btn btn-primary">¡QUIERO EMPEZAR!</a>
                                 </div>
                             </div>
                             <div className="box-action__link">
@@ -42,7 +43,7 @@ class BoxSection extends React.Component {
                             <div className="box-action box-action--left-offset" style={imageContainerStyle}>
                                 <div className="box-action__titles-container">
                                     <h4 className="box-action__title">Box Maip&uacute;</h4>
-                                    <button className="btn btn-primary">¡QUIERO EMPEZAR!</button>
+                                    <a href={MAIPU_APP_LINK} className="btn btn-primary">¡QUIERO EMPEZAR!</a>
                                 </div>
                             </div>
                             <div className="box-action__link">

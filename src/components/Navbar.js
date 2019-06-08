@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 import './Navbar.scss';
 
 
-const Navbar = ({ match }) => {
+const Navbar = ({ match, handleScrollToFooter }) => {
     return (
         <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
             <div className="container">
@@ -34,7 +34,7 @@ const Navbar = ({ match }) => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link navbar__link" to="#">
+                            <NavLink className="nav-link navbar__link" to="#footer" onClick={handleScrollToFooter}>
                                 Contacto
                             </NavLink>
                         </li>

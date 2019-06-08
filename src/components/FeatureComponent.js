@@ -40,7 +40,7 @@ class FeatureComponent extends React.Component {
 		)
 		
         return (
-            <div className="features">
+            <section className="features">
                 <div className="container">
 					<div className="row">
 						<div className="col-12 col-lg-6">
@@ -52,7 +52,7 @@ class FeatureComponent extends React.Component {
 						</div>
 					</div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

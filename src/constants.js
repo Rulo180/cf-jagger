@@ -8,3 +8,6 @@ export const MAIPU_SOCIALS_INFO =  [
     {name: 'instagram', link: 'https://www.instagram.com/crossfitjager/', iconClass: "fab fa-instagram"},
     {name: 'whatsapp', link: 'tel:+5492614166859', iconClass: "fab fa-whatsapp"},
 ];
+
+export const MAIPU_APP_LINK = "https://jager.turnosweb.com/";
+export const GODOY_CRUZ_APP_LINK = "https://jager.turnosweb.com/";
