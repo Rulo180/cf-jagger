@@ -1,22 +1,36 @@
 @import '../pages/variables';
 
-$cover-box-vertical-padding: 48px;
+$cover-box-padding-top: 48px;
+$cover-box-padding-bot: 64px;
 $cover-box-vertical-padding-top-lg: 120px;
 $cover-box-vertical-padding-bottom-lg: 88px;
 $cover-box-vertical-padding-top-xl: 128px;
 $cover-box-vertical-padding-bottom-xl: 80px;
 
 .cover-box {
-    padding-top: $cover-box-vertical-padding;
+    padding-top: $cover-box-padding-top;
+    padding-bottom: $cover-box-padding-bot;
     color: white;
     background-image: url('/static/images/tigres.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
+    &__title {
+        margin-bottom: 105px;
+        text-align: center;
+    }
+
     &__button {
         border-radius: 6px;
         margin: 0 auto;
+    }
+
+    @media screen and (min-width: $medium-width) {
+        &__title {
+            margin-bottom: 80px;
+            text-align: left;
+        }
     }
 
 	@media screen and (min-width: $large-width) {
