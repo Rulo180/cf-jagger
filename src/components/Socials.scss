@@ -1,9 +1,14 @@
 @import '../pages/variables';
 
 
-$socials-vert-padding: 30px;
-$socials-icon-size: 45px;
-$socials-item-pad-left: 60px;
+$socials-vert-padding: 24px;
+$socials-vert-padding-large: 30px;
+$socials-icon-size: 30px;
+$socials-icon-size-medium: 35px;
+$socials-icon-size-large: 45px;
+$socials-item-pad-hor: 4px;
+$socials-item-pad-hor-medium: 16px;
+$socials-item-pad-hor-large: 28px;
 
 .socials {
     padding: $socials-vert-padding 0;
@@ -23,10 +28,53 @@ $socials-item-pad-left: 60px;
 
     &__social-container {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 
     &__social-item {
-        padding-left: $socials-item-pad-left;
+        padding-left: $socials-item-pad-hor;
+        padding-right: $socials-item-pad-hor;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    
+    @media screen and (min-width: $medium-width) {
+        &__link {
+            font-size: $socials-icon-size-medium;
+        }
+
+        &__social-container {
+            justify-content: flex-end;
+        }
+        
+        &__social-item {
+            padding-left: $socials-item-pad-hor-medium;
+            padding-right: $socials-item-pad-hor-medium;
+        }
+    }
+    
+    @media screen and (min-width: $large-width) {
+        padding: $socials-vert-padding-large 0;
+        
+        &__link {
+            font-size: $socials-icon-size-large;
+        }
+
+        &__social-item {
+            padding-left: $socials-item-pad-hor-large;
+            padding-right: $socials-item-pad-hor-large;
+        }
+    }
+
+    @media screen and (max-width: $small-width) {
+        &__links-col {
+            padding-left: 0;
+        }
     }
 }

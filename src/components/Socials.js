@@ -22,10 +22,10 @@ const Socials = ({ socials }) => {
         <section className="socials">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-12 col-lg-8">
-                        <h3 className="socials__title">Seguinos en nuestras <b>redes</b></h3>
+                    <div className="col-8">
+                        <h4 className="socials__title">Seguinos en nuestras <b>redes</b></h4>
                     </div>
-                    <div className="col-12 col-lg-4">
+                    <div className="col-4 socials__links-col">
                         <div className="socials__social-container">
                             {socialLinks}
                         </div>
