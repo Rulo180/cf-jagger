@@ -1,6 +1,7 @@
 @import '../pages/variables';
 
-$banner-vertical-padding: 30px;
+$banner-vertical-padding: 24px;
+$banner-vertical-padding-large: 30px;
 $banner-lead-text-spacing: 5px;
 
 
@@ -21,7 +22,11 @@ $banner-lead-text-spacing: 5px;
 		line-height: 38px;
 	}
 
-	@media screen and (min-width: $small-width){
+	@media screen and (min-width: $medium-width){
 		text-align: center;
 	}
+
+	@media screen and (min-width: $large-width) {
+        padding: $banner-vertical-padding-large 0;
+    }
 }
