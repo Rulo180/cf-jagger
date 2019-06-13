@@ -30,33 +30,33 @@ $mod_2: 1.250; // desktop
 }
 
 html, body { 
-    @include fluid-type($min-screen-size, $max-screen-size, $min-font-size, $max-font-size);
+    // @include fluid-type($min-screen-size, $max-screen-size, $min-font-size, $max-font-size);
     margin: 0; 
     font-family: $font-family;
     font-weight: 400;
 }
 
 h1 {  
-    font-size: $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+    // font-size: $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*1rem; 
     font-family: $title-font-family;
-    @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$min-font-size, $mod_2*$mod_2*$mod_2 * $mod_2*$mod_2*$mod_2 *$min-font-size);
+    @include fluid-type($min-screen-size, $max-screen-size, 2.986 * $min-font-size, 3.815 * $max-font-size);
 }
 h2 {  
     font-size: $mod_1*$mod_1*$mod_1 *$mod_1*$mod_1*1rem; 
     font-family: $title-font-family;
-    @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$min-font-size, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$min-font-size);
+    @include fluid-type($min-screen-size, $max-screen-size, 2.488 * $min-font-size, 3.052 * $max-font-size);
 }
 h3 { 
     font-size: $mod_1*$mod_1*$mod_1*$mod_1*1rem;
     font-family: $title-font-family;
-    @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1*$mod_1*$mod_1*$min-font-size, $mod_2*$mod_2*$mod_2*$mod_2*$min-font-size);
+    @include fluid-type($min-screen-size, $max-screen-size, 1.728 * $min-font-size, 1.953 * $max-font-size);
 }
 
 h4 {
     font-size: $mod_1*$mod_1*$mod_1*1rem;
     font-family: $title-font-family;
     font-weight: 500;
-    @include fluid-type($min-screen-size, $max-screen-size, $mod_1*$mod_1*$mod_1*$min-font-size, $mod_2*$mod_2*$mod_2*$min-font-size);
+    @include fluid-type($min-screen-size, $max-screen-size, 1.2 * $min-font-size, 1.25 * $max-font-size);
 }
 
 p {
