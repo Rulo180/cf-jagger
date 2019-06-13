@@ -1,52 +1,49 @@
 @import '../pages/variables';
 
-// $info-vertical-padding: 60px;
-// $info--md-vertical-padding: 60px;
 
-$coach-padding-top-lg: 72px;
-$coach-padding-bottom-lg: 78px;
-
+$coach-vertical-padding: 60px;
+$coach-vertical-padding-large: 72px;
+$coach-title-margin-bottom: 52px;
+$coach-title-margin-bottom-large: 76px;
+$coach-description-margin-bottom: 20px;
 
 .coach {
-    // padding: $info-vertical-padding 0px;
-    // background-position: center;
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    &__description {
-        &-container {
-            margin-top: 76px;
-            position: relative;
-            &--separator:after {
-                content: '';
-                position: absolute;
-                top: -2.5%;
-                left: -15px;
-                width: 8px;
-                height: 105%;
-                background: $primary;
-            }
-        }
+    padding: $coach-vertical-padding 0px;
 
-        &-text {
-            text-transform: uppercase;
+
+    &__title {
+        margin-bottom: $coach-title-margin-bottom;
+    }
+
+    &__description-container {
+        position: relative;
+        margin-left: 15px;  // Bootstrap left spacing
+        margin-bottom: $coach-description-margin-bottom;
+        
+        &--separator:after {
+            content: '';
+            position: absolute;
+            top: -2.5%;
+            left: -15px;
+            width: 8px;
+            height: 105%;
+            background: $primary;
         }
+    } 
+
+    &__description-text {
+            text-transform: uppercase;
     }
     
     &__image {
         width: 100%;
     }
 
-    @media (min-width: $large-width) {
-        padding-top: $coach-padding-top-lg;
-        padding-bottom: $coach-padding-bottom-lg;
-        // &__title {
-        // }	
+    @media screen and (min-width: $large-width) {
+        padding: $coach-vertical-padding-large 0;
+
+        &__title {
+            margin-bottom: $coach-title-margin-bottom-large;
+        }	
     }
 }
-
-// @media (min-width: $medium-width) {
-// 	.info {
-//         padding: $info-vertical-padding 0px;
-    
-// 	}	
-// }
