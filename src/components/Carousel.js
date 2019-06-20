@@ -21,7 +21,6 @@ class SmallImagesCarousel extends React.Component {
     constructor(props) {
         super(props);
 
-        // this.quantityImagesShowed = 3;
         this.spaceBetweenImagesInPx = 16;
         this.myRef = React.createRef();
 
@@ -30,7 +29,7 @@ class SmallImagesCarousel extends React.Component {
             imageWidth: 0,
             imageHeight: 0,
             sliderWidth: 0,
-            actualPosition: 0
+			actualPosition: 0
         };
 
         this.resizeListener = this.resizeListener.bind(this);
@@ -40,18 +39,18 @@ class SmallImagesCarousel extends React.Component {
 
     onClickImage(idx) {
         return () => {
-            this.props.onChangeImage(IMAGES[idx]);
+            this.props.onChangeImage(idx);
         }
     }
 
     onClickArrow(side) {
         return () => {
             if(side === 'left') {
-                if(this.state.actualPosition >= 0) return;
-                this.setState({actualPosition: this.state.actualPosition + 1});
+                if(this.state.actualPosition >= 0) return this.props.setCurrentIndex('left');
+                this.setState({actualPosition: this.state.actualPosition + 1}, () => this.props.setCurrentIndex('left'));
             } else {
-                if(IMAGES.length + this.state.actualPosition <= this.state.quantityImagesShowed) return;
-                this.setState({actualPosition: this.state.actualPosition - 1});
+                if(IMAGES.length + this.state.actualPosition <= this.state.quantityImagesShowed) return this.props.setCurrentIndex('right');
+                this.setState({actualPosition: this.state.actualPosition - 1}, () => this.props.setCurrentIndex('right'));
             }
         }
     }
@@ -122,28 +121,45 @@ class Carousel extends React.Component {
     constructor() {
         super();
 
+		this.initialIndex = 0;
+
         this.state = {
-            image: IMAGES[0],
+			currentIndexImage: this.initialIndex, 
+            image: IMAGES[this.initialIndex],
             showBigImage: true
-        };
+		};
 
         this.onChangeImage = this.onChangeImage.bind(this);
         this.changeOnShowBigImage = this.changeOnShowBigImage.bind(this);
-    }
+        this.setCurrentIndex = this.setCurrentIndex.bind(this);
+	}
+	
+	setCurrentIndex(side) {
+		if(side === 'left') {
+			const nextIdx = this.state.currentIndexImage - 1;
+			if(!IMAGES[nextIdx]) return;
+			this.setState({currentIndexImage: nextIdx});
+		} else {
+			const nextIdx = this.state.currentIndexImage + 1;
+			if(!IMAGES[nextIdx]) return;
+			this.setState({currentIndexImage: nextIdx});
+		}
+	}
 
     changeOnShowBigImage(value) {
         this.setState({showBigImage: value});
     }
 
-    onChangeImage(image) {
-        this.setState({image});
+    onChangeImage(idx) {
+		this.setState({currentIndexImage: idx});
     }
 
     render() {
 
         let bigImage = null;
         if(this.state.showBigImage) {
-            bigImage = <BigImageCarousel image={this.state.image}/>
+			let image = IMAGES[this.state.currentIndexImage];
+            bigImage = <BigImageCarousel image={image}/>;
         }
 
         return (
@@ -153,7 +169,7 @@ class Carousel extends React.Component {
                         <div className="col-lg-12 carousel__title">
                             <h1>CONOCE NUESTRAS<br />INSTALACIONES</h1>
                         </div>
-                        <SmallImagesCarousel onChangeImage={this.onChangeImage} changeOnShowBigImage={this.changeOnShowBigImage}/>
+                        <SmallImagesCarousel onChangeImage={this.onChangeImage} changeOnShowBigImage={this.changeOnShowBigImage} setCurrentIndex={this.setCurrentIndex}/>
                         {bigImage}
                     </div>
                 </div>
