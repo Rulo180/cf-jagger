@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 
 import Banner from '../components/Banner';
+import Carousel from '../components/Carousel';
 import Coach from '../components/Coach';
 import CoverBox from '../components/CoverBox';
 import InfoSection from '../components/InfoSection';
 import Socials from '../components/Socials';
 import {GODOY_CRUZ_SOCIALS_INFO, GODOY_CRUZ_APP_LINK} from '../constants';
-
-import Carousel from '../components/Carousel';
 
 export class GodoyCruzPage extends Component {
     render() {

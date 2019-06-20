@@ -1,7 +1,8 @@
 @import '../pages/_variables';
 
 $services-vertical-padding: 60px;
-$services-title-padding-bottom: 64px;
+$services-title-padding-bottom: 32px;
+$services-title-padding-bottom-md: 64px;
 
 
 .services {
@@ -14,5 +15,37 @@ $services-title-padding-bottom: 64px;
 		/* Bootstrap overwrite start */
 		margin-bottom: 0;
 		/* Bootstrap overwrite end */
+	}
+
+	&__accordion-item {
+		padding-bottom: 4px;
+	}
+
+	&__accordion-heading {
+		border-radius: 4px;
+		height: 64px;
+		background: white;
+		color: $secondary;
+	}
+
+	&__accordion-heading-icon {
+		width: 40px;
+		height: 40px;
+		margin-right: 16px;
+	}
+
+	&__accordion-item-button {
+		padding: 0 24px;
+		height: 100%;
+	}
+
+	&__accordion-content {
+		background: white;
+		opacity: 0.53;
+		border-radius: 0 0 4px 4px;
+		color: $secondary;
+		justify-content: center;
+		padding: 16px 0;
+		margin-top: -2px;
 	}
 }

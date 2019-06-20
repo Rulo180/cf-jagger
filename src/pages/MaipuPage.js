@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Banner from '../components/Banner';
+import Carousel from '../components/Carousel';
 import Coach from '../components/Coach';
 import CoverBox from '../components/CoverBox';
 import InfoSection from '../components/InfoSection';
@@ -20,6 +21,7 @@ export class MaipuPage extends Component {
                 <Banner />
                 <Coach separator />
                 <Socials socials={MAIPU_SOCIALS_INFO} />
+                <Carousel />
             </main>
         )
     }
