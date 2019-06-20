@@ -10,14 +10,22 @@ class FeatureComponent extends React.Component {
         super(props);
 	}
 	
-	getItem(items) {
+	getItem(items, idxWithMaxHeight) {
 		return items.map((f, idx) => {
+			let mhClass = '';
+			let iconWrapperClass = 'd-inline';
+			let textClass = '';
+			if(typeof idxWithMaxHeight !== 'undefined' && idxWithMaxHeight === idx) {
+				mhClass = ' mh64';
+				iconWrapperClass = 'icon-wrapper';
+				textClass = ' no-pl';
+			}
 			return (
-				<div className="features__item" key={idx}>
-					<div className="features__icon p-0 d-inline">
+				<div className={"features__item " + mhClass} key={idx}>
+					<div className={"features__icon p-0 " + iconWrapperClass}>
 						<img src="static/images/miras.png" />
 					</div>
-					<p className="features__text align-self-center d-inline">{f}</p>
+					<p className={"features__text align-self-center d-inline " + textClass}>{f}</p>
 				</div>
 			)
 		});
@@ -25,8 +33,8 @@ class FeatureComponent extends React.Component {
 
     render() {
 
-		const featuresList1 = this.getItem(features1);
-		const featuresList2 = this.getItem(features2);
+		const featuresList1 = this.getItem(features1, 3);
+		const featuresList2 = this.getItem(features2, 0);
 		
 		const featuresList = (
 			<div className="features__list row">

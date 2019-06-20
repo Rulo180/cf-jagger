@@ -26,16 +26,26 @@ $features-item-sm-padding-bottom: 40px;
 	}
     &__item {
 		padding-bottom: $features-item-padding-bottom;
+		&.mh64 {
+			max-height: 64.9px;
+		}
     }
     &__icon {
         img {
             height: $icon-size;
-        }
+		}
+		&.icon-wrapper {
+			float: left;
+			margin-right: 12px;
+		}
     }
 
     &__text {
         text-transform: uppercase;
 		padding-left: 12px;
+		&.no-pl {
+			padding-left: 0px;
+		}
 	}
 	
 	&__image {
