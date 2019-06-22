@@ -16,16 +16,19 @@ class BoxSection extends React.Component {
 
     render() {
 
-        const imageContainerStyle = {
+        const maipuBackground = {
+            backgroundImage: 'url(static/images/jager-maipu-05.jpg)'
+        };
+        const gcBackground = {
             backgroundImage: 'url(static/images/tigres.jpg)'
         };
 
         return (
             <section className="box-section" >
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-lg-6 order-lg-last">
-                            <div className="box-action box-action--right-offset" style={imageContainerStyle}>
+                    <div className="row justify-content-center">
+                        <div className="col-12 col-sm-9 col-lg-6 order-lg-last">
+                            <div className="box-action box-action--right-offset" style={gcBackground}>
                                 <div className="box-action__titles-container">
                                     <h4 className="box-action__title">Box Godoy Cruz</h4>
                                     <a href={GODOY_CRUZ_APP_LINK} className="btn btn-primary">¡QUIERO EMPEZAR!</a>
@@ -39,8 +42,8 @@ class BoxSection extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6 order-lg-first">
-                            <div className="box-action box-action--left-offset" style={imageContainerStyle}>
+                        <div className="col-12 col-sm-9 col-lg-6 order-lg-first">
+                            <div className="box-action box-action--left-offset" style={maipuBackground}>
                                 <div className="box-action__titles-container">
                                     <h4 className="box-action__title">Box Maip&uacute;</h4>
                                     <a href={MAIPU_APP_LINK} className="btn btn-primary">¡QUIERO EMPEZAR!</a>

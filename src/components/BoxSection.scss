@@ -8,6 +8,10 @@ $box-action-vertical-offset: -48px;
 $box-section-padding-bottom: 36px;
 $box-section-md-padding-bottom: 72px;
 $box-section-link-margin-bottom: 36px;
+$box-action-padding-top: 80px;
+$box-action-padding-bottom: 60px;
+$box-action-padding-top-large: 120px;
+$box-action-padding-bottom-large: 50px;
 
 .box-section {
 
@@ -17,15 +21,16 @@ $box-section-link-margin-bottom: 36px;
         background-repeat: no-repeat;
         position: relative;
         margin: 0 -15px;
-
-        // TODO: check with inVision
-        padding-top: 120px;
-        padding-bottom: 100px;
-        
+        padding-top: $box-action-padding-top;
+        padding-bottom: $box-action-padding-bottom;
         
         &__titles-container {
             text-align: center;
             color: white;
+        }
+
+        &__title {
+            margin-bottom: 12px;
         }
 
         &__link {
@@ -78,6 +83,9 @@ $box-section-link-margin-bottom: 36px;
         padding-bottom: $box-section-md-padding-bottom;
 
         .box-action {
+            padding-top: $box-action-padding-top-large;
+            padding-bottom: $box-action-padding-bottom-large;
+
             &__link {
                 margin-bottom: 0;
             }

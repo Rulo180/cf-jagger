@@ -8,6 +8,8 @@ $cover-box-vertical-padding-top-xl: 128px;
 $cover-box-vertical-padding-bottom-xl: 80px;
 
 .cover-box {
+    @extend %full-height;
+
     padding-top: $cover-box-padding-top;
     padding-bottom: $cover-box-padding-bot;
     color: white;

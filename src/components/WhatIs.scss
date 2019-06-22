@@ -1,16 +1,26 @@
-$whatis-vertical-padding: 44px;
-// $footer-vertical-padding-sm: 60px;
-// $footer-vertical-padding-lg: 72px;
+@import '../pages/variables';
+
+
+$whatis-padding-top: 44px;
+$whatis-padding-bottom: 64px;
+$whatis-padding-top-large: 76px;
+$whatis-padding-bottom-large: 140px;
 
 .whatis {
-	background-image: url('/static/images/tigres.jpg');
+	background-image: url('/static/images/jager-maipu-11.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
     background-size: cover;
     color: white;
-    padding: $whatis-vertical-padding 0;
+    padding-top: $whatis-padding-top;
+    padding-bottom: $whatis-padding-bottom;
 
     p {
         padding-top:8px;
+    }
+
+    @media only screen and (min-width: $large-width) {
+        padding-top: $whatis-padding-top-large;
+        padding-bottom: $whatis-padding-bottom-large;
     }
 }
