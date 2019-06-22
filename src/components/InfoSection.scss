@@ -1,7 +1,8 @@
 @import '../pages/variables';
 
 $info-vertical-padding: 70px;
-$info--md-vertical-padding: 60px;
+$info-vertical-padding: 32px;
+$info-vertical-padding-md: 60px;
 
 
 .info {
@@ -9,6 +10,11 @@ $info--md-vertical-padding: 60px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
 
     &__description {
         &-container {
@@ -34,7 +40,10 @@ $info--md-vertical-padding: 60px;
 
 @media (min-width: $medium-width) {
 	.info {
-        padding: $info-vertical-padding 0px;
-    
+        padding: $info-vertical-padding-md 0px;
+        
+        &__title {
+            margin-bottom: 0;
+        }
 	}	
 }

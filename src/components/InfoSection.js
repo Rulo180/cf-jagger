@@ -14,7 +14,7 @@ class InfoSection extends React.Component {
             color,
          } = this.props;
 
-        const titles = title.map((word, idx) => <h1 className="text-uppercase" key={idx}>{word}</h1>);
+        const titles = title.map((word, idx) => <h1 className="info__title" key={idx}>{word}</h1>);
 
         const styleInfo = {
             background: (background) ? background : '',
@@ -30,10 +30,10 @@ class InfoSection extends React.Component {
             <section className="info" style={styleInfo}>
                 <div className="container">
 					<div className="row align-items-sm-center">
-                        <div className="col-12 col-sm-6">
+                        <div className="col-12 col-md-6">
                             {titles}
                         </div>
-                        <div className="col-12 col-sm-6">
+                        <div className="col-12 col-md-6">
                             <div className={containerClasses}>
                                 <p className="info__description-text" dangerouslySetInnerHTML={{__html: description}}></p>
                             </div>
