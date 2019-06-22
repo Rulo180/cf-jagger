@@ -11,13 +11,12 @@ class Cover extends React.Component {
         return (
             <section className="cover">
                 <div className="container">
-					<div className="row">
+					<div className="row align-items-center">
 						<div className="col-12">
                             <h3>El mejor momento es AHORA</h3>
                             <h3>El mejor lugar es ACA</h3>
                             <h4 className="cover__subtitle">¿Comenzamos?</h4>
                         </div>
-						<div className="col"></div>
 					</div>
                 </div>
             </section>

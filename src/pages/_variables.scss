@@ -24,3 +24,8 @@ $title-font-family: 'Impact', sans-serif;
 /* Buttons */
 $btn-vertical-padding: 16px;
 $btn-horizontal-padding: 44px; 
+
+$cover-section-height: 75vh;
+%full-height {
+    height: $cover-section-height;
+}

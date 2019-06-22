@@ -1,23 +1,29 @@
 @import '../pages/variables';
 
+$cover-height: 75vh;
 $cover-vertical-padding: 48px;
 $cover-vertical-padding-sm: 80px;
+$cover-background-y-position-large: 25%;
 
 .cover {
+    @extend %full-height;
+
     padding-top: $cover-vertical-padding;
     color: white;
-    background-image: url('/static/images/tigres.jpg');
+    background-image: url('/static/images/jager-maipu-04.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
 
     &__subtitle {
         padding-top: 8px;
-        padding-bottom: 100px;
     }
     
 	@media screen and (min-width: $small-width) {
 		padding: $cover-vertical-padding-sm 0;
     }
     
+    @media screen and (min-width: $large-width) {
+		background-position-y: $cover-background-y-position-large;
+    }
 }
