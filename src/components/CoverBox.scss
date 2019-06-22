@@ -11,10 +11,17 @@ $cover-box-vertical-padding-bottom-xl: 80px;
     padding-top: $cover-box-padding-top;
     padding-bottom: $cover-box-padding-bot;
     color: white;
-    background-image: url('/static/images/tigres.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 42%;
+    
+    &--maipu {
+        background-image: url('/static/images/jager-maipu-06.jpg');
+    }
+
+    &--gc {
+        background-image: url('/static/images/tigres.jpg');
+    }
 
     &__title {
         margin-bottom: 105px;
@@ -36,6 +43,8 @@ $cover-box-vertical-padding-bottom-xl: 80px;
 	@media screen and (min-width: $large-width) {
         padding-top: $cover-box-vertical-padding-top-lg;
         padding-bottom: $cover-box-vertical-padding-bottom-lg;
+        background-position-y: 32%;
+
         &__button {
             margin-top: 128px;
         }
