@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Carousel.scss';
 
-const IMAGES = ['tigres.jpg', 'gmap-maipu.png', 'tigres.jpg', 'gmap-maipu.png', 'tigres.jpg', 'gmap-maipu.png', 'tigres.jpg', 'gmap-maipu.png'];
+const IMAGES = ['jager-maipu-01.jpg', 'jager-maipu-02.jpg', 'jager-maipu-03.jpg', 'jager-maipu-04.jpg', 'jager-maipu-05.jpg', 'jager-maipu-07.jpg', 'jager-maipu-08.jpg', 'jager-maipu-09.jgp', 'jager-maipu-1.jpg', 'jager-maipu-11.jpg', 'jager-maipu-12.jpg', 'jager-maipu-13.jpg', 'jager-maipu-14.jpg', 'jager-maipu-15.jpg', 'jager-maipu-16.jgp'];
 
 class BigImageCarousel extends React.Component {
     render() {
@@ -44,20 +44,24 @@ class SmallImagesCarousel extends React.Component {
     }
 
     onClickArrow(side) {
+        const { images } = this.props;
+
         return () => {
             if(side === 'left') {
                 if(this.state.actualPosition >= 0) return this.props.setCurrentIndex('left');
                 this.setState({actualPosition: this.state.actualPosition + 1}, () => this.props.setCurrentIndex('left'));
             } else {
-                if(IMAGES.length + this.state.actualPosition <= this.state.quantityImagesShowed) return this.props.setCurrentIndex('right');
+                if(images.length + this.state.actualPosition <= this.state.quantityImagesShowed) return this.props.setCurrentIndex('right');
                 this.setState({actualPosition: this.state.actualPosition - 1}, () => this.props.setCurrentIndex('right'));
             }
         }
     }
 
     resizeListener() {
+        const { images } = this.props;
         let quantityImagesShowed = 3;
         let showBigImage = true;
+
         if(window.innerWidth <= 768) {
             quantityImagesShowed = 1;
             showBigImage = false;
@@ -65,7 +69,7 @@ class SmallImagesCarousel extends React.Component {
         const node = this.myRef.current;
         const containerImagesWidth = node.offsetWidth;
         const imageWidth = (containerImagesWidth - this.spaceBetweenImagesInPx * (quantityImagesShowed-1)) / quantityImagesShowed;
-        const sliderWidth = Math.ceil((imageWidth + this.spaceBetweenImagesInPx) * IMAGES.length );
+        const sliderWidth = Math.ceil((imageWidth + this.spaceBetweenImagesInPx) * images.length );
         const imageHeight = imageWidth * 0.66;
         this.setState({imageWidth, imageHeight, sliderWidth, quantityImagesShowed}, () => {
             this.props.changeOnShowBigImage(showBigImage);
@@ -83,6 +87,8 @@ class SmallImagesCarousel extends React.Component {
 
     render () {
         let imagesContainerStyle = {};
+        const { images } = this.props;
+
         if(this.state.sliderWidth > 0) {
             imagesContainerStyle = {
                 width: this.state.sliderWidth + 'px',
@@ -97,7 +103,7 @@ class SmallImagesCarousel extends React.Component {
                     </div>  
                     <div className="row carousel__slider" style={imagesContainerStyle}>
                         <div>
-                            {IMAGES.map((image, idx) => {
+                            {images.map((image, idx) => {
                                 let imageStyle = { 
                                     width: this.state.imageWidth + 'px', 
                                     height: this.state.imageHeight + 'px',
@@ -118,14 +124,12 @@ class SmallImagesCarousel extends React.Component {
 }
 
 class Carousel extends React.Component {
-    constructor() {
-        super();
-
-		this.initialIndex = 0;
+    constructor(props) {
+        super(props);
 
         this.state = {
-			currentIndexImage: this.initialIndex, 
-            image: IMAGES[this.initialIndex],
+			currentIndexImage: props.initialIndex, 
+            image: props.images[props.initialIndex],
             showBigImage: true
 		};
 
@@ -135,13 +139,15 @@ class Carousel extends React.Component {
 	}
 	
 	setCurrentIndex(side) {
+        const { images } = this.props;
+
 		if(side === 'left') {
 			const nextIdx = this.state.currentIndexImage - 1;
-			if(!IMAGES[nextIdx]) return;
+			if(!images[nextIdx]) return;
 			this.setState({currentIndexImage: nextIdx});
 		} else {
 			const nextIdx = this.state.currentIndexImage + 1;
-			if(!IMAGES[nextIdx]) return;
+			if(!images[nextIdx]) return;
 			this.setState({currentIndexImage: nextIdx});
 		}
 	}
@@ -155,10 +161,11 @@ class Carousel extends React.Component {
     }
 
     render() {
-
+        const { images } = this.props;
         let bigImage = null;
+
         if(this.state.showBigImage) {
-			let image = IMAGES[this.state.currentIndexImage];
+			let image = images[this.state.currentIndexImage];
             bigImage = <BigImageCarousel image={image}/>;
         }
 
@@ -169,7 +176,7 @@ class Carousel extends React.Component {
                         <div className="col-lg-12 carousel__title">
                             <h1>CONOCE NUESTRAS<br />INSTALACIONES</h1>
                         </div>
-                        <SmallImagesCarousel onChangeImage={this.onChangeImage} changeOnShowBigImage={this.changeOnShowBigImage} setCurrentIndex={this.setCurrentIndex}/>
+                        <SmallImagesCarousel images={images} onChangeImage={this.onChangeImage} changeOnShowBigImage={this.changeOnShowBigImage} setCurrentIndex={this.setCurrentIndex}/>
                         {bigImage}
                     </div>
                 </div>
