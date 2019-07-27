@@ -30,9 +30,6 @@ class Coach extends React.Component {
                                         <p className="coach__description-text">
                                             LUCAS NESSIER, DE 27 A&ntilde;OS, ES PROFESOR DE EDUCACI&Oacute;N F&Iacute;SICA Y ENTRENADOR DE CROSSFIT NIVEL 2 (DOS), APASIONADO POR LA ACTIVIDAD F&Iacute;SICA Y LA SALUD EX JUGADOR DE F&Uacute;TBOL. SUS INICIOS EN EL CROSSFIT FUERON A FINES DEL A&ntilde;O 2013.
                                         </p>
-                                        <p className="coach__description-text">
-                                            SU PACIENCIA Y DESEMPE&ntilde;O HA MEJORADO LA CALIDAD DE VIDA DE MUCHO DE SUS ALUMNOS CONTAGIANDO EL ENTUSIASMO, PASI&Oacute;N POR EL DEPORTE Y BRINDANDO UN AMBIENTE DE CONTENCI&Oacute;N
-                                        </p> 
                                     </div>
                                 </div>
                             </div>

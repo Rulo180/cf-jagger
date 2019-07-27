@@ -24,26 +24,36 @@ const Services = () => {
 				<div className="row justify-content-center d-none d-md-flex">
 					<div className="col-10 col-md-6 col-lg-3 mb-5 mb-lg-0">
 						<Card 
-							title="Crossfit j&auml;ger" 
-							description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non id dolore dicta nihil iste omnis rem, ducimus pariatur eveniet, qui alias beatae impedit natus ipsam, unde veniam perferendis fuga ea illo deleniti tempore eius aspernatur voluptate. Voluptatum doloribus perspiciatis quo."
+							title="j&auml;ger 60" 
+							description={["60 minutos", "Constantemente variado", "Diferentes grados de complejidad", "Fuerza y trabajos de habilidad."]}
 						/>
 					</div>
 					<div className="col-10 col-md-6 col-lg-3 mb-5 mb-lg-0">
 						<Card 
-							title="j&auml;ger 45'" 
-							description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non id dolore dicta nihil iste omnis rem, ducimus pariatur eveniet, qui alias beatae impedit natus ipsam, unde veniam perferendis fuga ea illo deleniti tempore eius aspernatur voluptate. Voluptatum doloribus perspiciatis quo."
+							title="j&auml;ger 45" 
+							description={["45 minutos", "Pesos moderados/bajos", "Complejidad de ejercicios moderada/baja."]}
 						/>
 					</div>
 					<div className="col-10 col-md-6 col-lg-3 mb-5 mb-lg-0">
 						<Card 
 							title="j&auml;ger kids" 
-							description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non id dolore dicta nihil iste omnis rem, ducimus pariatur eveniet, qui alias beatae impedit natus ipsam, unde veniam perferendis fuga ea illo deleniti tempore eius aspernatur voluptate. Voluptatum doloribus perspiciatis quo."
+							description={["45 minutos", "Juegos y actividades recreativas", "Compañerismo", "Generar conciencia sobre la importancia de la actividad física y buena alimentación desde una temprana edad."]}
 						/>
 					</div>
-					<div className="col-10 col-md-6 col-lg-3">
+					<div className="col-10 col-md-6 col-lg-4 mb-5 mb-lg-0">
 						<Card 
-							title="Levantamiento" 
-							description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non id dolore dicta nihil iste omnis rem, ducimus pariatur eveniet, qui alias beatae impedit natus ipsam, unde veniam perferendis fuga ea illo deleniti tempore eius aspernatur voluptate. Voluptatum doloribus perspiciatis quo."
+							title="Levantamiento ol&iacute;mpico" 
+							description={["60 minutos", "Fuerza y trabajos de técnica", "Enfoque principal en los ejercicios de levantamiento 'Snatch, Clean and Jerk'"]}
+						/>
+					</div>
+					<div className="col-10 col-md-6 col-lg-4 mb-5 mb-lg-0">
+						<Card 
+							title="SGA e hipopresivos" 
+							description={[
+								"STRECHING GLOBAL ACTIVO: consiste en estiramiento globales mediante diferentes posturas, acompañadas de una respiración controlada.",
+								"Siendo una herramienta muy eficaz para mejorar rendimiento muscular y prevenir lesiones.",
+								"ABDOMINALES HIPOPRESIVOS: ejercicios que reducen la presión abdominal y así reducir perímetro de la cintura, mejorar postura, aumentar estabilidad de zona media y prevenir y tratar prolapsos. principal en los ejercicios de levantamiento 'Snatch, Clean and Jerk'"
+							]}
 						/>
 					</div>
 				</div>

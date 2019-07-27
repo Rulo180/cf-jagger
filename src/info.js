@@ -1,7 +1,7 @@
 const info = [
     {
         title: ["Nuestros", "Espacios"],
-        description: 'En Jäger contamos con el equipo adecuado y áreas preparadas para cada tipo de entrenamiento, donde llevarás tus ejercicios y tu estado en forma a otro nivel'
+        description: 'CONTAMOS CON 300M<sup>2</sup>, PARA EL DESARROLLO DE LAS CLASES. ÁREAS PREPARADAS PARA CADA TIPO DE ENTRENAMIENTO, DONDE LLEVARÁS TUS EJERCICIOS Y TU ESTADO EN FORMA A OTRO NIVEL.'
     },
     {
         title: ["¿Por qué es", "para todos?"],
@@ -21,7 +21,7 @@ const info = [
     },
     {
         title: ["Jäger Maipú"],
-        description: "Ubicado en el centro de Maipú, se encuentra nuestro box de CrossFit, especialmente diseñado para atender todas las necesidades de nuestros atletas. <br />Estamos en Ozamis 457, Maipú, Mendoza.",
+        description: "Estamos en Ozamis 457, Maipú.</br>Te invitamos a que conozcas nuestro centro de entrenamiento e instalaciones.</br>Nuestro fin es que mejores tu salud y calidad de vida generando conciencia sobre la importancia de la actividad física y la alimentación.",
     },
 ];
 

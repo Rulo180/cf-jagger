@@ -5,6 +5,9 @@ import './Card.scss';
 
 
 const Card = ({ title, description }) => {
+    const descriptionItems = description.map((e) => (
+        <li class="list-group-item border-0">{e}</li>
+    ));
     return (
         <div className="card">
             <div className="card-header">
@@ -15,7 +18,9 @@ const Card = ({ title, description }) => {
             </div>
             <div className="card-body">
                 <h4 className="card-title">{title}</h4>
-                <p className="card-text">{description}</p>
+                <ul class="list-group list-group-flush">
+                    {descriptionItems}
+                </ul>
             </div>
         </div>
     );
@@ -23,12 +28,12 @@ const Card = ({ title, description }) => {
 
 Card.propTypes = {
     title: PropTypes.string,
-    description: PropTypes.string,
+    description: PropTypes.array,
 };
 
 Card.defaultProps = {
     title: '',
-    description: '',
+    description: [],
 };
 
 export default Card;
