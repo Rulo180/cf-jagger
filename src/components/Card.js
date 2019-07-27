@@ -6,7 +6,7 @@ import './Card.scss';
 
 const Card = ({ title, description }) => {
     const descriptionItems = description.map((e) => (
-        <li class="list-group-item border-0">{e}</li>
+        <li class="list-group-item">{e}</li>
     ));
     return (
         <div className="card">

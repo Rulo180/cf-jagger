@@ -63,7 +63,7 @@ const Services = () => {
 							<AccordionItemButton className="services__accordion-item-button">
 								<div className="row no-gutters align-items-center h-100">
 									<div className="services__accordion-heading-icon">
-										<img src="/static/images/miras.png" alt="Mira" />
+										<img src="/static/images/mira-negra.png" alt="Crossfit Jager icon" className="services__accordion-heading-image" />
 									</div>
 									<h4 className="mb-0 text-uppercase">Crossfit j&auml;ger</h4>
 								</div>
@@ -72,9 +72,12 @@ const Services = () => {
 						<AccordionItemPanel>
 							<div className="row no-gutters services__accordion-content">
 								<div className="col-9">
-									<p>
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non id dolore dicta nihil iste omnis rem, ducimus pariatur eveniet, qui alias beatae impedit natus ipsam, unde veniam perferendis fuga ea illo deleniti tempore eius aspernatur voluptate. Voluptatum doloribus perspiciatis quo.
-									</p>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">60 minutos</li>
+										<li class="list-group-item">Constantemente variado</li>
+										<li class="list-group-item">Diferentes grados de complejidad</li>
+										<li class="list-group-item">Fuerza y trabajos de habilidad</li>
+									</ul>
 								</div>
 							</div>
 						</AccordionItemPanel>
@@ -84,7 +87,7 @@ const Services = () => {
 							<AccordionItemButton className="services__accordion-item-button">
 								<div className="row no-gutters align-items-center h-100">
 									<div className="services__accordion-heading-icon">
-										<img src="/static/images/miras.png" alt="Mira" />
+										<img src="/static/images/mira-negra.png" alt="Crossfit Jager icon" className="services__accordion-heading-image" />
 									</div>
 									<h4 className="mb-0 text-uppercase">j&auml;ger 45'</h4>
 								</div>
@@ -93,9 +96,11 @@ const Services = () => {
 						<AccordionItemPanel>
 							<div className="row no-gutters services__accordion-content">
 								<div className="col-9">
-									<p>
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non id dolore dicta nihil iste omnis rem, ducimus pariatur eveniet, qui alias beatae impedit natus ipsam, unde veniam perferendis fuga ea illo deleniti tempore eius aspernatur voluptate. Voluptatum doloribus perspiciatis quo.
-									</p>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">45 minutos</li>
+										<li class="list-group-item">Pesos moderados/bajos</li>
+										<li class="list-group-item">Complejidad de ejercicios moderada/baja</li>
+									</ul>
 								</div>
 							</div>
 						</AccordionItemPanel>
@@ -105,7 +110,7 @@ const Services = () => {
 							<AccordionItemButton className="services__accordion-item-button">
 								<div className="row no-gutters align-items-center h-100">
 									<div className="services__accordion-heading-icon">
-										<img src="/static/images/miras.png" alt="Mira" />
+										<img src="/static/images/mira-negra.png" alt="Crossfit Jager icon" className="services__accordion-heading-image" />
 									</div>
 									<h4 className="mb-0 text-uppercase">j&auml;ger kids</h4>
 								</div>
@@ -114,9 +119,12 @@ const Services = () => {
 						<AccordionItemPanel>
 							<div className="row no-gutters services__accordion-content">
 								<div className="col-9">
-									<p>
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non id dolore dicta nihil iste omnis rem, ducimus pariatur eveniet, qui alias beatae impedit natus ipsam, unde veniam perferendis fuga ea illo deleniti tempore eius aspernatur voluptate. Voluptatum doloribus perspiciatis quo.
-									</p>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">45 minutos</li>
+										<li class="list-group-item">Juegos y actividades recreativas</li>
+										<li class="list-group-item">Compañerismo</li>
+										<li class="list-group-item">Generar conciencia sobre la importancia de la actividad física y buena alimentación desde una temprana edad</li>
+									</ul>
 								</div>
 							</div>
 						</AccordionItemPanel>
@@ -126,7 +134,7 @@ const Services = () => {
 							<AccordionItemButton className="services__accordion-item-button">
 								<div className="row no-gutters align-items-center h-100">
 									<div className="services__accordion-heading-icon">
-										<img src="/static/images/miras.png" alt="Mira" />
+										<img src="/static/images/mira-negra.png" alt="Crossfit Jager icon" className="services__accordion-heading-image" />
 									</div>
 									<h4 className="mb-0 text-uppercase">Levantamiento</h4>
 								</div>
@@ -135,9 +143,34 @@ const Services = () => {
 						<AccordionItemPanel>
 							<div className="row no-gutters services__accordion-content">
 								<div className="col-9">
-									<p>
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non id dolore dicta nihil iste omnis rem, ducimus pariatur eveniet, qui alias beatae impedit natus ipsam, unde veniam perferendis fuga ea illo deleniti tempore eius aspernatur voluptate. Voluptatum doloribus perspiciatis quo.
-									</p>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">60 minutos</li>
+										<li class="list-group-item">Fuerza y trabajos de técnica</li>
+										<li class="list-group-item">Enfoque principal en los ejercicios de levantamiento 'Snatch, Clean and Jerk</li>
+									</ul>
+								</div>
+							</div>
+						</AccordionItemPanel>
+					</AccordionItem>
+					<AccordionItem className="services__accordion-item">
+						<AccordionItemHeading className="services__accordion-heading">
+							<AccordionItemButton className="services__accordion-item-button">
+								<div className="row no-gutters align-items-center h-100">
+									<div className="services__accordion-heading-icon">
+										<img src="/static/images/mira-negra.png" alt="Crossfit Jager icon" className="services__accordion-heading-image" />
+									</div>
+									<h4 className="mb-0 text-uppercase">SGA e hipopresivos</h4>
+								</div>
+							</AccordionItemButton>
+						</AccordionItemHeading>
+						<AccordionItemPanel>
+							<div className="row no-gutters services__accordion-content">
+								<div className="col-9">
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">STRECHING GLOBAL ACTIVO: consiste en estiramiento globales mediante diferentes posturas, acompañadas de una respiración controlada</li>
+										<li class="list-group-item">Siendo una herramienta muy eficaz para mejorar rendimiento muscular y prevenir lesiones</li>
+										<li class="list-group-item">ABDOMINALES HIPOPRESIVOS: ejercicios que reducen la presión abdominal y así reducir perímetro de la cintura, mejorar postura, aumentar estabilidad de zona media y prevenir y tratar prolapsos. principal en los ejercicios de levantamiento 'Snatch, Clean and Jerk'</li>
+									</ul>
 								</div>
 							</div>
 						</AccordionItemPanel>

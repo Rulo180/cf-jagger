@@ -2,7 +2,8 @@
 
 $services-vertical-padding: 60px;
 $services-title-padding-bottom: 32px;
-$services-title-padding-bottom-md: 64px;
+$services-title-padding-bottom-md: 72px;
+$services-accordion-image-size: 40px;
 
 
 .services {
@@ -29,10 +30,16 @@ $services-title-padding-bottom-md: 64px;
 	}
 
 	&__accordion-heading-icon {
-		width: 40px;
-		height: 40px;
+		width: $services-accordion-image-size;
+		height: $services-accordion-image-size;
 		margin-right: 16px;
 	}
+
+	&__accordion-heading-image {
+		width: $services-accordion-image-size;
+		height: $services-accordion-image-size;
+	}
+
 
 	&__accordion-item-button {
 		padding: 0 24px;
@@ -41,11 +48,17 @@ $services-title-padding-bottom-md: 64px;
 
 	&__accordion-content {
 		background: white;
-		opacity: 0.53;
+		opacity: 0.65;
 		border-radius: 0 0 4px 4px;
 		color: $secondary;
 		justify-content: center;
 		padding: 16px 0;
 		margin-top: -2px;
+	}
+
+	@media screen and (min-width: $medium-width) {
+		&__title {
+			padding-bottom: $services-title-padding-bottom-md;
+		}
 	}
 }
