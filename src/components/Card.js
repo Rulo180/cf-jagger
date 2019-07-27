@@ -11,9 +11,10 @@ const Card = ({ title, description }) => {
     return (
         <div className="card">
             <div className="card-header">
-                <span className="fa-stack fa-4x">
-                    <i className="fa fa-circle fa-stack-2x card-header-bg"></i>
-                    <i className="fas fa-bullseye fa-stack-1x card-header-icon"></i>
+                <span className="card-header__circle">
+                    <div className="card-header__circle-border">
+                        <img src="../static/images/mira-negra.png" alt="Crossfit Jager icon" className="card-header__circle-icon" />
+                    </div>
                 </span>
             </div>
             <div className="card-body">

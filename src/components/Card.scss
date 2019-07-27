@@ -2,10 +2,12 @@
 
 $card-icon-size: 90px;
 $card-header-offset: -55px;
-$card-lg-header-offset: -70px;
+$card-lg-header-offset: -69px;
 $card-padding: 24px;
 $card-border-radius: 12px;
 $card-title-margin-bottom: 20px;
+$card-header-circle-padding: 10px;
+$card-header-circle-border-padding: 6px;
 
 
 .card {
@@ -32,14 +34,18 @@ $card-title-margin-bottom: 20px;
         background: transparent;
         /* Bootstrap overwrite end*/
 
-        &-icon {
-            font-size: $card-icon-size;
+        &__circle {
+            border-radius: 50%;
+            background: white;
+            display: inline-block;
+            padding: $card-header-circle-padding;
         }
 
-        &-bg {
-            color: white;
+        &__circle-border {
+            border-radius: 50%;
+            border: 5px solid $primary;
+            padding: $card-header-circle-border-padding;
         }
-        
     }
 
     &-body {
