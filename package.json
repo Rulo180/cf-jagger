@@ -40,6 +40,6 @@
     "react-accessible-accordion": "^3.0.0",
     "react-dom": "^16.8.4",
     "react-router-dom": "^5.0.0",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   }
 }
